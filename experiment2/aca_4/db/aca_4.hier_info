@@ -1,0 +1,34 @@
+|aca_4
+x[0] => sout~4.IN0
+x[0] => cout~1.IN0
+x[0] => cout~0.IN0
+x[1] => sout~6.IN0
+x[1] => cout~4.IN0
+x[1] => cout~3.IN0
+x[2] => sout~8.IN0
+x[2] => cout~7.IN0
+x[2] => cout~6.IN0
+x[3] => sout~10.IN0
+x[3] => sout~1.IN0
+x[3] => sout~0.IN0
+y[0] => sout~4.IN1
+y[0] => cout~1.IN1
+y[0] => cout~0.IN1
+y[1] => sout~6.IN1
+y[1] => cout~4.IN1
+y[1] => cout~3.IN1
+y[2] => sout~8.IN1
+y[2] => cout~7.IN1
+y[2] => cout~6.IN1
+y[3] => sout~10.IN1
+y[3] => sout~1.IN1
+y[3] => sout~0.IN1
+cin => sout~5.IN1
+cin => cout~2.IN0
+sout[0] <= sout~5.DB_MAX_OUTPUT_PORT_TYPE
+sout[1] <= sout~7.DB_MAX_OUTPUT_PORT_TYPE
+sout[2] <= sout~9.DB_MAX_OUTPUT_PORT_TYPE
+sout[3] <= sout~11.DB_MAX_OUTPUT_PORT_TYPE
+sout[4] <= sout~3.DB_MAX_OUTPUT_PORT_TYPE
+
+

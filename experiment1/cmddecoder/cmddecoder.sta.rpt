@@ -1,0 +1,1128 @@
+TimeQuest Timing Analyzer report for cmddecoder
+Sat Nov 07 20:48:05 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                   ;
++--------------------+----------------------------------------------------------------+
+; Quartus II Version ; Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; cmddecoder                                                     ;
+; Device Family      ; Stratix II                                                     ;
+; Device Name        ; EP2S15F484C3                                                   ;
+; Timing Models      ; Final                                                          ;
+; Delay Model        ; Combined                                                       ;
+; Rise/Fall Delays   ; Unavailable                                                    ;
++--------------------+----------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 6      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+----------------------------------
+; Slow Model Minimum Pulse Width ;
+----------------------------------
+Nothing to report.
+
+
++---------------------------------------------------------------+
+; Propagation Delay                                             ;
++---------------+-------------+-------+--------+--------+-------+
+; Input Port    ; Output Port ; RR    ; RF     ; FR     ; FF    ;
++---------------+-------------+-------+--------+--------+-------+
+; cmdar_code[0] ; add         ; 9.148 ;        ;        ; 9.148 ;
+; cmdar_code[0] ; halt        ; 8.474 ;        ;        ; 8.474 ;
+; cmdar_code[0] ; in1         ;       ; 8.464  ; 8.464  ;       ;
+; cmdar_code[0] ; jc          ;       ; 8.111  ; 8.111  ;       ;
+; cmdar_code[0] ; jmp         ;       ; 8.805  ; 8.805  ;       ;
+; cmdar_code[0] ; jz          ;       ; 8.357  ; 8.357  ;       ;
+; cmdar_code[0] ; mov1        ; 9.814 ;        ;        ; 9.814 ;
+; cmdar_code[0] ; mov2        ; 8.400 ;        ;        ; 8.400 ;
+; cmdar_code[0] ; mov3        ; 9.011 ;        ;        ; 9.011 ;
+; cmdar_code[0] ; nop         ;       ; 8.006  ; 8.006  ;       ;
+; cmdar_code[0] ; not1        ;       ; 9.195  ; 9.195  ;       ;
+; cmdar_code[0] ; or1         ; 8.078 ;        ;        ; 8.078 ;
+; cmdar_code[0] ; out1        ;       ; 7.855  ; 7.855  ;       ;
+; cmdar_code[0] ; rsl         ; 8.140 ;        ;        ; 8.140 ;
+; cmdar_code[0] ; rsr         ; 9.278 ;        ;        ; 9.278 ;
+; cmdar_code[0] ; sub         ;       ; 8.037  ; 8.037  ;       ;
+; cmdar_code[1] ; add         ;       ; 8.750  ; 8.750  ;       ;
+; cmdar_code[1] ; halt        ;       ; 8.385  ; 8.385  ;       ;
+; cmdar_code[1] ; in1         ;       ; 8.375  ; 8.375  ;       ;
+; cmdar_code[1] ; jc          ;       ; 7.807  ; 7.807  ;       ;
+; cmdar_code[1] ; jmp         ;       ; 8.500  ; 8.500  ;       ;
+; cmdar_code[1] ; jz          ;       ; 7.924  ; 7.924  ;       ;
+; cmdar_code[1] ; mov1        ; 9.089 ;        ;        ; 9.089 ;
+; cmdar_code[1] ; mov2        ; 7.640 ;        ;        ; 7.640 ;
+; cmdar_code[1] ; mov3        ; 9.081 ;        ;        ; 9.081 ;
+; cmdar_code[1] ; nop         ; 7.394 ;        ;        ; 7.394 ;
+; cmdar_code[1] ; not1        ; 9.099 ;        ;        ; 9.099 ;
+; cmdar_code[1] ; or1         ;       ; 7.716  ; 7.716  ;       ;
+; cmdar_code[1] ; out1        ; 7.920 ;        ;        ; 7.920 ;
+; cmdar_code[1] ; rsl         ;       ; 7.887  ; 7.887  ;       ;
+; cmdar_code[1] ; rsr         ;       ; 9.189  ; 9.189  ;       ;
+; cmdar_code[1] ; sub         ; 7.840 ;        ;        ; 7.840 ;
+; cmdar_code[2] ; add         ;       ; 8.831  ; 8.831  ;       ;
+; cmdar_code[2] ; halt        ;       ; 7.500  ; 7.500  ;       ;
+; cmdar_code[2] ; in1         ; 8.500 ;        ;        ; 8.500 ;
+; cmdar_code[2] ; jc          ; 8.342 ;        ;        ; 8.342 ;
+; cmdar_code[2] ; jmp         ; 9.036 ;        ;        ; 9.036 ;
+; cmdar_code[2] ; jz          ; 8.588 ;        ;        ; 8.588 ;
+; cmdar_code[2] ; mov1        ; 9.354 ;        ;        ; 9.354 ;
+; cmdar_code[2] ; mov2        ; 7.940 ;        ;        ; 7.940 ;
+; cmdar_code[2] ; mov3        ; 9.117 ;        ;        ; 9.117 ;
+; cmdar_code[2] ; nop         ; 8.237 ;        ;        ; 8.237 ;
+; cmdar_code[2] ; not1        ;       ; 9.135  ; 9.135  ;       ;
+; cmdar_code[2] ; or1         ; 7.797 ;        ;        ; 7.797 ;
+; cmdar_code[2] ; out1        ;       ; 7.842  ; 7.842  ;       ;
+; cmdar_code[2] ; rsl         ; 8.171 ;        ;        ; 8.171 ;
+; cmdar_code[2] ; rsr         ; 9.249 ;        ;        ; 9.249 ;
+; cmdar_code[2] ; sub         ; 8.579 ;        ;        ; 8.579 ;
+; cmdar_code[3] ; add         ; 9.069 ;        ;        ; 9.069 ;
+; cmdar_code[3] ; halt        ;       ; 7.770  ; 7.770  ;       ;
+; cmdar_code[3] ; in1         ;       ; 8.559  ; 8.559  ;       ;
+; cmdar_code[3] ; jc          ; 8.326 ;        ;        ; 8.326 ;
+; cmdar_code[3] ; jmp         ; 9.020 ;        ;        ; 9.020 ;
+; cmdar_code[3] ; jz          ; 8.572 ;        ;        ; 8.572 ;
+; cmdar_code[3] ; mov1        ; 9.735 ;        ;        ; 9.735 ;
+; cmdar_code[3] ; mov2        ; 8.321 ;        ;        ; 8.321 ;
+; cmdar_code[3] ; mov3        ; 8.778 ;        ;        ; 8.778 ;
+; cmdar_code[3] ; nop         ; 8.221 ;        ;        ; 8.221 ;
+; cmdar_code[3] ; not1        ; 8.795 ;        ;        ; 8.795 ;
+; cmdar_code[3] ; or1         ; 7.999 ;        ;        ; 7.999 ;
+; cmdar_code[3] ; out1        ;       ; 7.709  ; 7.709  ;       ;
+; cmdar_code[3] ; rsl         ;       ; 8.230  ; 8.230  ;       ;
+; cmdar_code[3] ; rsr         ;       ; 9.308  ; 9.308  ;       ;
+; cmdar_code[3] ; sub         ;       ; 8.638  ; 8.638  ;       ;
+; cmdar_code[4] ; add         ;       ; 9.141  ; 9.141  ;       ;
+; cmdar_code[4] ; halt        ;       ; 7.873  ; 7.873  ;       ;
+; cmdar_code[4] ; in1         ;       ; 8.916  ; 8.916  ;       ;
+; cmdar_code[4] ; jc          ;       ; 8.441  ; 8.441  ;       ;
+; cmdar_code[4] ; jmp         ;       ; 9.135  ; 9.135  ;       ;
+; cmdar_code[4] ; jz          ;       ; 8.687  ; 8.687  ;       ;
+; cmdar_code[4] ; mov1        ;       ; 9.049  ; 9.049  ;       ;
+; cmdar_code[4] ; mov2        ; 8.236 ;        ;        ; 8.236 ;
+; cmdar_code[4] ; mov3        ;       ; 8.783  ; 8.783  ;       ;
+; cmdar_code[4] ; nop         ;       ; 8.336  ; 8.336  ;       ;
+; cmdar_code[4] ; not1        ;       ; 9.866  ; 9.866  ;       ;
+; cmdar_code[4] ; or1         ;       ; 8.314  ; 8.314  ;       ;
+; cmdar_code[4] ; out1        ;       ; 8.399  ; 8.399  ;       ;
+; cmdar_code[4] ; rsl         ;       ; 8.587  ; 8.587  ;       ;
+; cmdar_code[4] ; rsr         ;       ; 9.665  ; 9.665  ;       ;
+; cmdar_code[4] ; sub         ;       ; 8.995  ; 8.995  ;       ;
+; cmdar_code[5] ; add         ;       ; 8.888  ; 8.888  ;       ;
+; cmdar_code[5] ; halt        ;       ; 7.629  ; 7.629  ;       ;
+; cmdar_code[5] ; in1         ;       ; 8.645  ; 8.645  ;       ;
+; cmdar_code[5] ; jc          ;       ; 8.197  ; 8.197  ;       ;
+; cmdar_code[5] ; jmp         ;       ; 8.891  ; 8.891  ;       ;
+; cmdar_code[5] ; jz          ;       ; 8.443  ; 8.443  ;       ;
+; cmdar_code[5] ; mov2        ; 7.983 ;        ;        ; 7.983 ;
+; cmdar_code[5] ; mov3        ;       ; 8.539  ; 8.539  ;       ;
+; cmdar_code[5] ; nop         ;       ; 8.092  ; 8.092  ;       ;
+; cmdar_code[5] ; not1        ;       ; 9.613  ; 9.613  ;       ;
+; cmdar_code[5] ; or1         ;       ; 8.061  ; 8.061  ;       ;
+; cmdar_code[5] ; out1        ;       ; 8.146  ; 8.146  ;       ;
+; cmdar_code[5] ; rsl         ;       ; 8.316  ; 8.316  ;       ;
+; cmdar_code[5] ; rsr         ;       ; 9.394  ; 9.394  ;       ;
+; cmdar_code[5] ; sub         ;       ; 8.724  ; 8.724  ;       ;
+; cmdar_code[6] ; add         ;       ; 9.515  ; 9.515  ;       ;
+; cmdar_code[6] ; halt        ;       ; 8.476  ; 8.476  ;       ;
+; cmdar_code[6] ; jc          ; 7.590 ;        ;        ; 7.590 ;
+; cmdar_code[6] ; jmp         ;       ; 8.289  ; 8.289  ;       ;
+; cmdar_code[6] ; jz          ;       ; 7.708  ; 7.708  ;       ;
+; cmdar_code[6] ; mov1        ;       ; 10.181 ; 10.181 ;       ;
+; cmdar_code[6] ; mov2        ;       ; 8.767  ; 8.767  ;       ;
+; cmdar_code[6] ; mov3        ; 8.903 ;        ;        ; 8.903 ;
+; cmdar_code[6] ; nop         ;       ; 7.440  ; 7.440  ;       ;
+; cmdar_code[6] ; or1         ;       ; 8.445  ; 8.445  ;       ;
+; cmdar_code[6] ; rsl         ; 8.301 ;        ;        ; 8.301 ;
+; cmdar_code[6] ; rsr         ;       ; 9.280  ; 9.280  ;       ;
+; cmdar_code[6] ; sub         ;       ; 7.956  ; 7.956  ;       ;
+; cmdar_code[7] ; add         ;       ; 9.276  ; 9.276  ;       ;
+; cmdar_code[7] ; halt        ;       ; 8.062  ; 8.062  ;       ;
+; cmdar_code[7] ; jc          ;       ; 7.550  ; 7.550  ;       ;
+; cmdar_code[7] ; jmp         ;       ; 8.251  ; 8.251  ;       ;
+; cmdar_code[7] ; jz          ; 7.666 ;        ;        ; 7.666 ;
+; cmdar_code[7] ; mov1        ;       ; 9.942  ; 9.942  ;       ;
+; cmdar_code[7] ; mov2        ;       ; 8.528  ; 8.528  ;       ;
+; cmdar_code[7] ; mov3        ; 8.661 ;        ;        ; 8.661 ;
+; cmdar_code[7] ; nop         ;       ; 7.583  ; 7.583  ;       ;
+; cmdar_code[7] ; or1         ;       ; 8.206  ; 8.206  ;       ;
+; cmdar_code[7] ; rsl         ; 8.062 ;        ;        ; 8.062 ;
+; cmdar_code[7] ; rsr         ;       ; 8.866  ; 8.866  ;       ;
+; cmdar_code[7] ; sub         ;       ; 8.097  ; 8.097  ;       ;
+; enable        ; add         ; 6.147 ; 5.839  ; 5.839  ; 6.147 ;
+; enable        ; halt        ; 4.611 ;        ;        ; 4.611 ;
+; enable        ; in1         ; 5.535 ;        ;        ; 5.535 ;
+; enable        ; jc          ; 5.181 ;        ;        ; 5.181 ;
+; enable        ; jmp         ; 5.875 ;        ;        ; 5.875 ;
+; enable        ; jz          ; 5.427 ;        ;        ; 5.427 ;
+; enable        ; mov1        ; 6.813 ;        ;        ; 6.813 ;
+; enable        ; mov2        ; 5.399 ;        ;        ; 5.399 ;
+; enable        ; mov3        ; 5.522 ;        ;        ; 5.522 ;
+; enable        ; nop         ; 5.076 ;        ;        ; 5.076 ;
+; enable        ; not1        ; 6.683 ;        ;        ; 6.683 ;
+; enable        ; or1         ; 5.077 ; 4.650  ; 4.650  ; 5.077 ;
+; enable        ; out1        ; 5.216 ;        ;        ; 5.216 ;
+; enable        ; rsl         ; 5.206 ;        ;        ; 5.206 ;
+; enable        ; rsr         ; 6.284 ;        ;        ; 6.284 ;
+; enable        ; sub         ; 5.614 ; 5.209  ; 5.209  ; 5.614 ;
++---------------+-------------+-------+--------+--------+-------+
+
+
++---------------------------------------------------------------+
+; Minimum Propagation Delay                                     ;
++---------------+-------------+-------+--------+--------+-------+
+; Input Port    ; Output Port ; RR    ; RF     ; FR     ; FF    ;
++---------------+-------------+-------+--------+--------+-------+
+; cmdar_code[0] ; add         ; 9.148 ;        ;        ; 9.148 ;
+; cmdar_code[0] ; halt        ; 8.474 ;        ;        ; 8.474 ;
+; cmdar_code[0] ; in1         ;       ; 8.464  ; 8.464  ;       ;
+; cmdar_code[0] ; jc          ;       ; 8.111  ; 8.111  ;       ;
+; cmdar_code[0] ; jmp         ;       ; 8.805  ; 8.805  ;       ;
+; cmdar_code[0] ; jz          ;       ; 8.357  ; 8.357  ;       ;
+; cmdar_code[0] ; mov1        ; 9.814 ;        ;        ; 9.814 ;
+; cmdar_code[0] ; mov2        ; 8.400 ;        ;        ; 8.400 ;
+; cmdar_code[0] ; mov3        ; 9.011 ;        ;        ; 9.011 ;
+; cmdar_code[0] ; nop         ;       ; 8.006  ; 8.006  ;       ;
+; cmdar_code[0] ; not1        ;       ; 9.195  ; 9.195  ;       ;
+; cmdar_code[0] ; or1         ; 8.078 ;        ;        ; 8.078 ;
+; cmdar_code[0] ; out1        ;       ; 7.855  ; 7.855  ;       ;
+; cmdar_code[0] ; rsl         ; 8.140 ;        ;        ; 8.140 ;
+; cmdar_code[0] ; rsr         ; 9.278 ;        ;        ; 9.278 ;
+; cmdar_code[0] ; sub         ;       ; 8.037  ; 8.037  ;       ;
+; cmdar_code[1] ; add         ;       ; 8.750  ; 8.750  ;       ;
+; cmdar_code[1] ; halt        ;       ; 8.385  ; 8.385  ;       ;
+; cmdar_code[1] ; in1         ;       ; 8.375  ; 8.375  ;       ;
+; cmdar_code[1] ; jc          ;       ; 7.807  ; 7.807  ;       ;
+; cmdar_code[1] ; jmp         ;       ; 8.500  ; 8.500  ;       ;
+; cmdar_code[1] ; jz          ;       ; 7.924  ; 7.924  ;       ;
+; cmdar_code[1] ; mov1        ; 9.089 ;        ;        ; 9.089 ;
+; cmdar_code[1] ; mov2        ; 7.640 ;        ;        ; 7.640 ;
+; cmdar_code[1] ; mov3        ; 9.081 ;        ;        ; 9.081 ;
+; cmdar_code[1] ; nop         ; 7.394 ;        ;        ; 7.394 ;
+; cmdar_code[1] ; not1        ; 9.099 ;        ;        ; 9.099 ;
+; cmdar_code[1] ; or1         ;       ; 7.716  ; 7.716  ;       ;
+; cmdar_code[1] ; out1        ; 7.920 ;        ;        ; 7.920 ;
+; cmdar_code[1] ; rsl         ;       ; 7.887  ; 7.887  ;       ;
+; cmdar_code[1] ; rsr         ;       ; 9.189  ; 9.189  ;       ;
+; cmdar_code[1] ; sub         ; 7.840 ;        ;        ; 7.840 ;
+; cmdar_code[2] ; add         ;       ; 8.831  ; 8.831  ;       ;
+; cmdar_code[2] ; halt        ;       ; 7.500  ; 7.500  ;       ;
+; cmdar_code[2] ; in1         ; 8.500 ;        ;        ; 8.500 ;
+; cmdar_code[2] ; jc          ; 8.342 ;        ;        ; 8.342 ;
+; cmdar_code[2] ; jmp         ; 9.036 ;        ;        ; 9.036 ;
+; cmdar_code[2] ; jz          ; 8.588 ;        ;        ; 8.588 ;
+; cmdar_code[2] ; mov1        ; 9.354 ;        ;        ; 9.354 ;
+; cmdar_code[2] ; mov2        ; 7.940 ;        ;        ; 7.940 ;
+; cmdar_code[2] ; mov3        ; 9.117 ;        ;        ; 9.117 ;
+; cmdar_code[2] ; nop         ; 8.237 ;        ;        ; 8.237 ;
+; cmdar_code[2] ; not1        ;       ; 9.135  ; 9.135  ;       ;
+; cmdar_code[2] ; or1         ; 7.797 ;        ;        ; 7.797 ;
+; cmdar_code[2] ; out1        ;       ; 7.842  ; 7.842  ;       ;
+; cmdar_code[2] ; rsl         ; 8.171 ;        ;        ; 8.171 ;
+; cmdar_code[2] ; rsr         ; 9.249 ;        ;        ; 9.249 ;
+; cmdar_code[2] ; sub         ; 8.579 ;        ;        ; 8.579 ;
+; cmdar_code[3] ; add         ; 9.069 ;        ;        ; 9.069 ;
+; cmdar_code[3] ; halt        ;       ; 7.770  ; 7.770  ;       ;
+; cmdar_code[3] ; in1         ;       ; 8.559  ; 8.559  ;       ;
+; cmdar_code[3] ; jc          ; 8.326 ;        ;        ; 8.326 ;
+; cmdar_code[3] ; jmp         ; 9.020 ;        ;        ; 9.020 ;
+; cmdar_code[3] ; jz          ; 8.572 ;        ;        ; 8.572 ;
+; cmdar_code[3] ; mov1        ; 9.735 ;        ;        ; 9.735 ;
+; cmdar_code[3] ; mov2        ; 8.321 ;        ;        ; 8.321 ;
+; cmdar_code[3] ; mov3        ; 8.778 ;        ;        ; 8.778 ;
+; cmdar_code[3] ; nop         ; 8.221 ;        ;        ; 8.221 ;
+; cmdar_code[3] ; not1        ; 8.795 ;        ;        ; 8.795 ;
+; cmdar_code[3] ; or1         ; 7.999 ;        ;        ; 7.999 ;
+; cmdar_code[3] ; out1        ;       ; 7.709  ; 7.709  ;       ;
+; cmdar_code[3] ; rsl         ;       ; 8.230  ; 8.230  ;       ;
+; cmdar_code[3] ; rsr         ;       ; 9.308  ; 9.308  ;       ;
+; cmdar_code[3] ; sub         ;       ; 8.638  ; 8.638  ;       ;
+; cmdar_code[4] ; add         ;       ; 9.141  ; 9.141  ;       ;
+; cmdar_code[4] ; halt        ;       ; 7.873  ; 7.873  ;       ;
+; cmdar_code[4] ; in1         ;       ; 8.916  ; 8.916  ;       ;
+; cmdar_code[4] ; jc          ;       ; 8.441  ; 8.441  ;       ;
+; cmdar_code[4] ; jmp         ;       ; 9.135  ; 9.135  ;       ;
+; cmdar_code[4] ; jz          ;       ; 8.687  ; 8.687  ;       ;
+; cmdar_code[4] ; mov1        ;       ; 9.049  ; 9.049  ;       ;
+; cmdar_code[4] ; mov2        ; 8.236 ;        ;        ; 8.236 ;
+; cmdar_code[4] ; mov3        ;       ; 8.783  ; 8.783  ;       ;
+; cmdar_code[4] ; nop         ;       ; 8.336  ; 8.336  ;       ;
+; cmdar_code[4] ; not1        ;       ; 9.866  ; 9.866  ;       ;
+; cmdar_code[4] ; or1         ;       ; 8.314  ; 8.314  ;       ;
+; cmdar_code[4] ; out1        ;       ; 8.399  ; 8.399  ;       ;
+; cmdar_code[4] ; rsl         ;       ; 8.587  ; 8.587  ;       ;
+; cmdar_code[4] ; rsr         ;       ; 9.665  ; 9.665  ;       ;
+; cmdar_code[4] ; sub         ;       ; 8.995  ; 8.995  ;       ;
+; cmdar_code[5] ; add         ;       ; 8.888  ; 8.888  ;       ;
+; cmdar_code[5] ; halt        ;       ; 7.629  ; 7.629  ;       ;
+; cmdar_code[5] ; in1         ;       ; 8.645  ; 8.645  ;       ;
+; cmdar_code[5] ; jc          ;       ; 8.197  ; 8.197  ;       ;
+; cmdar_code[5] ; jmp         ;       ; 8.891  ; 8.891  ;       ;
+; cmdar_code[5] ; jz          ;       ; 8.443  ; 8.443  ;       ;
+; cmdar_code[5] ; mov2        ; 7.983 ;        ;        ; 7.983 ;
+; cmdar_code[5] ; mov3        ;       ; 8.539  ; 8.539  ;       ;
+; cmdar_code[5] ; nop         ;       ; 8.092  ; 8.092  ;       ;
+; cmdar_code[5] ; not1        ;       ; 9.613  ; 9.613  ;       ;
+; cmdar_code[5] ; or1         ;       ; 8.061  ; 8.061  ;       ;
+; cmdar_code[5] ; out1        ;       ; 8.146  ; 8.146  ;       ;
+; cmdar_code[5] ; rsl         ;       ; 8.316  ; 8.316  ;       ;
+; cmdar_code[5] ; rsr         ;       ; 9.394  ; 9.394  ;       ;
+; cmdar_code[5] ; sub         ;       ; 8.724  ; 8.724  ;       ;
+; cmdar_code[6] ; add         ;       ; 9.515  ; 9.515  ;       ;
+; cmdar_code[6] ; halt        ;       ; 8.476  ; 8.476  ;       ;
+; cmdar_code[6] ; jc          ; 7.590 ;        ;        ; 7.590 ;
+; cmdar_code[6] ; jmp         ;       ; 8.289  ; 8.289  ;       ;
+; cmdar_code[6] ; jz          ;       ; 7.708  ; 7.708  ;       ;
+; cmdar_code[6] ; mov1        ;       ; 10.181 ; 10.181 ;       ;
+; cmdar_code[6] ; mov2        ;       ; 8.767  ; 8.767  ;       ;
+; cmdar_code[6] ; mov3        ; 8.903 ;        ;        ; 8.903 ;
+; cmdar_code[6] ; nop         ;       ; 7.440  ; 7.440  ;       ;
+; cmdar_code[6] ; or1         ;       ; 8.445  ; 8.445  ;       ;
+; cmdar_code[6] ; rsl         ; 8.301 ;        ;        ; 8.301 ;
+; cmdar_code[6] ; rsr         ;       ; 9.280  ; 9.280  ;       ;
+; cmdar_code[6] ; sub         ;       ; 7.956  ; 7.956  ;       ;
+; cmdar_code[7] ; add         ;       ; 9.276  ; 9.276  ;       ;
+; cmdar_code[7] ; halt        ;       ; 8.062  ; 8.062  ;       ;
+; cmdar_code[7] ; jc          ;       ; 7.550  ; 7.550  ;       ;
+; cmdar_code[7] ; jmp         ;       ; 8.251  ; 8.251  ;       ;
+; cmdar_code[7] ; jz          ; 7.666 ;        ;        ; 7.666 ;
+; cmdar_code[7] ; mov1        ;       ; 9.942  ; 9.942  ;       ;
+; cmdar_code[7] ; mov2        ;       ; 8.528  ; 8.528  ;       ;
+; cmdar_code[7] ; mov3        ; 8.661 ;        ;        ; 8.661 ;
+; cmdar_code[7] ; nop         ;       ; 7.583  ; 7.583  ;       ;
+; cmdar_code[7] ; or1         ;       ; 8.206  ; 8.206  ;       ;
+; cmdar_code[7] ; rsl         ; 8.062 ;        ;        ; 8.062 ;
+; cmdar_code[7] ; rsr         ;       ; 8.866  ; 8.866  ;       ;
+; cmdar_code[7] ; sub         ;       ; 8.097  ; 8.097  ;       ;
+; enable        ; add         ; 6.147 ; 5.839  ; 5.839  ; 6.147 ;
+; enable        ; halt        ; 4.611 ;        ;        ; 4.611 ;
+; enable        ; in1         ; 5.535 ;        ;        ; 5.535 ;
+; enable        ; jc          ; 5.181 ;        ;        ; 5.181 ;
+; enable        ; jmp         ; 5.875 ;        ;        ; 5.875 ;
+; enable        ; jz          ; 5.427 ;        ;        ; 5.427 ;
+; enable        ; mov1        ; 6.813 ;        ;        ; 6.813 ;
+; enable        ; mov2        ; 5.399 ;        ;        ; 5.399 ;
+; enable        ; mov3        ; 5.522 ;        ;        ; 5.522 ;
+; enable        ; nop         ; 5.076 ;        ;        ; 5.076 ;
+; enable        ; not1        ; 6.683 ;        ;        ; 6.683 ;
+; enable        ; or1         ; 5.077 ; 4.650  ; 4.650  ; 5.077 ;
+; enable        ; out1        ; 5.216 ;        ;        ; 5.216 ;
+; enable        ; rsl         ; 5.206 ;        ;        ; 5.206 ;
+; enable        ; rsr         ; 6.284 ;        ;        ; 6.284 ;
+; enable        ; sub         ; 5.614 ; 5.209  ; 5.209  ; 5.614 ;
++---------------+-------------+-------+--------+--------+-------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+----------------------------------
+; Fast Model Minimum Pulse Width ;
+----------------------------------
+Nothing to report.
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; cmdar_code[0] ; add         ; 5.221 ;       ;       ; 5.221 ;
+; cmdar_code[0] ; halt        ; 4.859 ;       ;       ; 4.859 ;
+; cmdar_code[0] ; in1         ;       ; 4.846 ; 4.846 ;       ;
+; cmdar_code[0] ; jc          ;       ; 4.705 ; 4.705 ;       ;
+; cmdar_code[0] ; jmp         ;       ; 5.051 ; 5.051 ;       ;
+; cmdar_code[0] ; jz          ;       ; 4.850 ; 4.850 ;       ;
+; cmdar_code[0] ; mov1        ; 5.572 ;       ;       ; 5.572 ;
+; cmdar_code[0] ; mov2        ; 4.852 ;       ;       ; 4.852 ;
+; cmdar_code[0] ; mov3        ; 5.147 ;       ;       ; 5.147 ;
+; cmdar_code[0] ; nop         ;       ; 4.666 ; 4.666 ;       ;
+; cmdar_code[0] ; not1        ;       ; 5.259 ; 5.259 ;       ;
+; cmdar_code[0] ; or1         ; 4.734 ;       ;       ; 4.734 ;
+; cmdar_code[0] ; out1        ;       ; 4.561 ; 4.561 ;       ;
+; cmdar_code[0] ; rsl         ; 4.667 ;       ;       ; 4.667 ;
+; cmdar_code[0] ; rsr         ; 5.244 ;       ;       ; 5.244 ;
+; cmdar_code[0] ; sub         ;       ; 4.749 ; 4.749 ;       ;
+; cmdar_code[1] ; add         ;       ; 4.984 ; 4.984 ;       ;
+; cmdar_code[1] ; halt        ;       ; 4.813 ; 4.813 ;       ;
+; cmdar_code[1] ; in1         ;       ; 4.800 ; 4.800 ;       ;
+; cmdar_code[1] ; jc          ;       ; 4.521 ; 4.521 ;       ;
+; cmdar_code[1] ; jmp         ;       ; 4.868 ; 4.868 ;       ;
+; cmdar_code[1] ; jz          ;       ; 4.598 ; 4.598 ;       ;
+; cmdar_code[1] ; mov1        ; 5.182 ;       ;       ; 5.182 ;
+; cmdar_code[1] ; mov2        ; 4.457 ;       ;       ; 4.457 ;
+; cmdar_code[1] ; mov3        ; 5.177 ;       ;       ; 5.177 ;
+; cmdar_code[1] ; nop         ; 4.342 ;       ;       ; 4.342 ;
+; cmdar_code[1] ; not1        ; 5.239 ;       ;       ; 5.239 ;
+; cmdar_code[1] ; or1         ;       ; 4.502 ; 4.502 ;       ;
+; cmdar_code[1] ; out1        ; 4.595 ;       ;       ; 4.595 ;
+; cmdar_code[1] ; rsl         ;       ; 4.583 ; 4.583 ;       ;
+; cmdar_code[1] ; rsr         ;       ; 5.198 ; 5.198 ;       ;
+; cmdar_code[1] ; sub         ; 4.660 ;       ;       ; 4.660 ;
+; cmdar_code[2] ; add         ;       ; 4.999 ; 4.999 ;       ;
+; cmdar_code[2] ; halt        ;       ; 4.380 ; 4.380 ;       ;
+; cmdar_code[2] ; in1         ; 4.883 ;       ;       ; 4.883 ;
+; cmdar_code[2] ; jc          ; 4.801 ;       ;       ; 4.801 ;
+; cmdar_code[2] ; jmp         ; 5.147 ;       ;       ; 5.147 ;
+; cmdar_code[2] ; jz          ; 4.946 ;       ;       ; 4.946 ;
+; cmdar_code[2] ; mov1        ; 5.295 ;       ;       ; 5.295 ;
+; cmdar_code[2] ; mov2        ; 4.575 ;       ;       ; 4.575 ;
+; cmdar_code[2] ; mov3        ; 5.188 ;       ;       ; 5.188 ;
+; cmdar_code[2] ; nop         ; 4.762 ;       ;       ; 4.762 ;
+; cmdar_code[2] ; not1        ;       ; 5.250 ; 5.250 ;       ;
+; cmdar_code[2] ; or1         ; 4.517 ;       ;       ; 4.517 ;
+; cmdar_code[2] ; out1        ;       ; 4.543 ; 4.543 ;       ;
+; cmdar_code[2] ; rsl         ; 4.732 ;       ;       ; 4.732 ;
+; cmdar_code[2] ; rsr         ; 5.231 ;       ;       ; 5.231 ;
+; cmdar_code[2] ; sub         ; 5.026 ;       ;       ; 5.026 ;
+; cmdar_code[3] ; add         ; 5.148 ;       ;       ; 5.148 ;
+; cmdar_code[3] ; halt        ;       ; 4.500 ; 4.500 ;       ;
+; cmdar_code[3] ; in1         ;       ; 4.895 ; 4.895 ;       ;
+; cmdar_code[3] ; jc          ; 4.790 ;       ;       ; 4.790 ;
+; cmdar_code[3] ; jmp         ; 5.136 ;       ;       ; 5.136 ;
+; cmdar_code[3] ; jz          ; 4.935 ;       ;       ; 4.935 ;
+; cmdar_code[3] ; mov1        ; 5.499 ;       ;       ; 5.499 ;
+; cmdar_code[3] ; mov2        ; 4.779 ;       ;       ; 4.779 ;
+; cmdar_code[3] ; mov3        ; 5.026 ;       ;       ; 5.026 ;
+; cmdar_code[3] ; nop         ; 4.751 ;       ;       ; 4.751 ;
+; cmdar_code[3] ; not1        ; 5.088 ;       ;       ; 5.088 ;
+; cmdar_code[3] ; or1         ; 4.661 ;       ;       ; 4.661 ;
+; cmdar_code[3] ; out1        ;       ; 4.480 ; 4.480 ;       ;
+; cmdar_code[3] ; rsl         ;       ; 4.744 ; 4.744 ;       ;
+; cmdar_code[3] ; rsr         ;       ; 5.243 ; 5.243 ;       ;
+; cmdar_code[3] ; sub         ;       ; 5.038 ; 5.038 ;       ;
+; cmdar_code[4] ; add         ;       ; 5.174 ; 5.174 ;       ;
+; cmdar_code[4] ; halt        ;       ; 4.546 ; 4.546 ;       ;
+; cmdar_code[4] ; in1         ;       ; 5.064 ; 5.064 ;       ;
+; cmdar_code[4] ; jc          ;       ; 4.847 ; 4.847 ;       ;
+; cmdar_code[4] ; jmp         ;       ; 5.193 ; 5.193 ;       ;
+; cmdar_code[4] ; jz          ;       ; 4.992 ; 4.992 ;       ;
+; cmdar_code[4] ; mov1        ;       ; 5.155 ; 5.155 ;       ;
+; cmdar_code[4] ; mov2        ; 4.739 ;       ;       ; 4.739 ;
+; cmdar_code[4] ; mov3        ;       ; 4.993 ; 4.993 ;       ;
+; cmdar_code[4] ; nop         ;       ; 4.808 ; 4.808 ;       ;
+; cmdar_code[4] ; not1        ;       ; 5.639 ; 5.639 ;       ;
+; cmdar_code[4] ; or1         ;       ; 4.788 ; 4.788 ;       ;
+; cmdar_code[4] ; out1        ;       ; 4.839 ; 4.839 ;       ;
+; cmdar_code[4] ; rsl         ;       ; 4.913 ; 4.913 ;       ;
+; cmdar_code[4] ; rsr         ;       ; 5.412 ; 5.412 ;       ;
+; cmdar_code[4] ; sub         ;       ; 5.207 ; 5.207 ;       ;
+; cmdar_code[5] ; add         ;       ; 5.040 ; 5.040 ;       ;
+; cmdar_code[5] ; halt        ;       ; 4.435 ; 4.435 ;       ;
+; cmdar_code[5] ; in1         ;       ; 4.940 ; 4.940 ;       ;
+; cmdar_code[5] ; jc          ;       ; 4.736 ; 4.736 ;       ;
+; cmdar_code[5] ; jmp         ;       ; 5.082 ; 5.082 ;       ;
+; cmdar_code[5] ; jz          ;       ; 4.881 ; 4.881 ;       ;
+; cmdar_code[5] ; mov2        ; 4.605 ;       ;       ; 4.605 ;
+; cmdar_code[5] ; mov3        ;       ; 4.883 ; 4.883 ;       ;
+; cmdar_code[5] ; nop         ;       ; 4.697 ; 4.697 ;       ;
+; cmdar_code[5] ; not1        ;       ; 5.505 ; 5.505 ;       ;
+; cmdar_code[5] ; or1         ;       ; 4.654 ; 4.654 ;       ;
+; cmdar_code[5] ; out1        ;       ; 4.705 ; 4.705 ;       ;
+; cmdar_code[5] ; rsl         ;       ; 4.789 ; 4.789 ;       ;
+; cmdar_code[5] ; rsr         ;       ; 5.288 ; 5.288 ;       ;
+; cmdar_code[5] ; sub         ;       ; 5.083 ; 5.083 ;       ;
+; cmdar_code[6] ; add         ;       ; 5.361 ; 5.361 ;       ;
+; cmdar_code[6] ; halt        ;       ; 4.831 ; 4.831 ;       ;
+; cmdar_code[6] ; jc          ; 4.390 ;       ;       ; 4.390 ;
+; cmdar_code[6] ; jmp         ;       ; 4.744 ; 4.744 ;       ;
+; cmdar_code[6] ; jz          ;       ; 4.468 ; 4.468 ;       ;
+; cmdar_code[6] ; mov1        ;       ; 5.712 ; 5.712 ;       ;
+; cmdar_code[6] ; mov2        ;       ; 4.992 ; 4.992 ;       ;
+; cmdar_code[6] ; mov3        ; 5.035 ;       ;       ; 5.035 ;
+; cmdar_code[6] ; nop         ;       ; 4.325 ; 4.325 ;       ;
+; cmdar_code[6] ; or1         ;       ; 4.874 ; 4.874 ;       ;
+; cmdar_code[6] ; rsl         ; 4.747 ;       ;       ; 4.747 ;
+; cmdar_code[6] ; rsr         ;       ; 5.216 ; 5.216 ;       ;
+; cmdar_code[6] ; sub         ;       ; 4.683 ; 4.683 ;       ;
+; cmdar_code[7] ; add         ;       ; 5.271 ; 5.271 ;       ;
+; cmdar_code[7] ; halt        ;       ; 4.656 ; 4.656 ;       ;
+; cmdar_code[7] ; jc          ;       ; 4.400 ; 4.400 ;       ;
+; cmdar_code[7] ; jmp         ;       ; 4.756 ; 4.756 ;       ;
+; cmdar_code[7] ; jz          ; 4.476 ;       ;       ; 4.476 ;
+; cmdar_code[7] ; mov1        ;       ; 5.622 ; 5.622 ;       ;
+; cmdar_code[7] ; mov2        ;       ; 4.902 ; 4.902 ;       ;
+; cmdar_code[7] ; mov3        ; 4.944 ;       ;       ; 4.944 ;
+; cmdar_code[7] ; nop         ;       ; 4.420 ; 4.420 ;       ;
+; cmdar_code[7] ; or1         ;       ; 4.784 ; 4.784 ;       ;
+; cmdar_code[7] ; rsl         ; 4.657 ;       ;       ; 4.657 ;
+; cmdar_code[7] ; rsr         ;       ; 5.041 ; 5.041 ;       ;
+; cmdar_code[7] ; sub         ;       ; 4.776 ; 4.776 ;       ;
+; enable        ; add         ; 3.325 ; 3.126 ; 3.126 ; 3.325 ;
+; enable        ; halt        ; 2.540 ;       ;       ; 2.540 ;
+; enable        ; in1         ; 3.007 ;       ;       ; 3.007 ;
+; enable        ; jc          ; 2.843 ;       ;       ; 2.843 ;
+; enable        ; jmp         ; 3.189 ;       ;       ; 3.189 ;
+; enable        ; jz          ; 2.988 ;       ;       ; 2.988 ;
+; enable        ; mov1        ; 3.676 ;       ;       ; 3.676 ;
+; enable        ; mov2        ; 2.956 ;       ;       ; 2.956 ;
+; enable        ; mov3        ; 2.990 ;       ;       ; 2.990 ;
+; enable        ; nop         ; 2.804 ;       ;       ; 2.804 ;
+; enable        ; not1        ; 3.661 ;       ;       ; 3.661 ;
+; enable        ; or1         ; 2.838 ; 2.564 ; 2.564 ; 2.838 ;
+; enable        ; out1        ; 2.861 ;       ;       ; 2.861 ;
+; enable        ; rsl         ; 2.856 ;       ;       ; 2.856 ;
+; enable        ; rsr         ; 3.355 ;       ;       ; 3.355 ;
+; enable        ; sub         ; 3.150 ; 2.950 ; 2.950 ; 3.150 ;
++---------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; cmdar_code[0] ; add         ; 5.221 ;       ;       ; 5.221 ;
+; cmdar_code[0] ; halt        ; 4.859 ;       ;       ; 4.859 ;
+; cmdar_code[0] ; in1         ;       ; 4.846 ; 4.846 ;       ;
+; cmdar_code[0] ; jc          ;       ; 4.705 ; 4.705 ;       ;
+; cmdar_code[0] ; jmp         ;       ; 5.051 ; 5.051 ;       ;
+; cmdar_code[0] ; jz          ;       ; 4.850 ; 4.850 ;       ;
+; cmdar_code[0] ; mov1        ; 5.572 ;       ;       ; 5.572 ;
+; cmdar_code[0] ; mov2        ; 4.852 ;       ;       ; 4.852 ;
+; cmdar_code[0] ; mov3        ; 5.147 ;       ;       ; 5.147 ;
+; cmdar_code[0] ; nop         ;       ; 4.666 ; 4.666 ;       ;
+; cmdar_code[0] ; not1        ;       ; 5.259 ; 5.259 ;       ;
+; cmdar_code[0] ; or1         ; 4.734 ;       ;       ; 4.734 ;
+; cmdar_code[0] ; out1        ;       ; 4.561 ; 4.561 ;       ;
+; cmdar_code[0] ; rsl         ; 4.667 ;       ;       ; 4.667 ;
+; cmdar_code[0] ; rsr         ; 5.244 ;       ;       ; 5.244 ;
+; cmdar_code[0] ; sub         ;       ; 4.749 ; 4.749 ;       ;
+; cmdar_code[1] ; add         ;       ; 4.984 ; 4.984 ;       ;
+; cmdar_code[1] ; halt        ;       ; 4.813 ; 4.813 ;       ;
+; cmdar_code[1] ; in1         ;       ; 4.800 ; 4.800 ;       ;
+; cmdar_code[1] ; jc          ;       ; 4.521 ; 4.521 ;       ;
+; cmdar_code[1] ; jmp         ;       ; 4.868 ; 4.868 ;       ;
+; cmdar_code[1] ; jz          ;       ; 4.598 ; 4.598 ;       ;
+; cmdar_code[1] ; mov1        ; 5.182 ;       ;       ; 5.182 ;
+; cmdar_code[1] ; mov2        ; 4.457 ;       ;       ; 4.457 ;
+; cmdar_code[1] ; mov3        ; 5.177 ;       ;       ; 5.177 ;
+; cmdar_code[1] ; nop         ; 4.342 ;       ;       ; 4.342 ;
+; cmdar_code[1] ; not1        ; 5.239 ;       ;       ; 5.239 ;
+; cmdar_code[1] ; or1         ;       ; 4.502 ; 4.502 ;       ;
+; cmdar_code[1] ; out1        ; 4.595 ;       ;       ; 4.595 ;
+; cmdar_code[1] ; rsl         ;       ; 4.583 ; 4.583 ;       ;
+; cmdar_code[1] ; rsr         ;       ; 5.198 ; 5.198 ;       ;
+; cmdar_code[1] ; sub         ; 4.660 ;       ;       ; 4.660 ;
+; cmdar_code[2] ; add         ;       ; 4.999 ; 4.999 ;       ;
+; cmdar_code[2] ; halt        ;       ; 4.380 ; 4.380 ;       ;
+; cmdar_code[2] ; in1         ; 4.883 ;       ;       ; 4.883 ;
+; cmdar_code[2] ; jc          ; 4.801 ;       ;       ; 4.801 ;
+; cmdar_code[2] ; jmp         ; 5.147 ;       ;       ; 5.147 ;
+; cmdar_code[2] ; jz          ; 4.946 ;       ;       ; 4.946 ;
+; cmdar_code[2] ; mov1        ; 5.295 ;       ;       ; 5.295 ;
+; cmdar_code[2] ; mov2        ; 4.575 ;       ;       ; 4.575 ;
+; cmdar_code[2] ; mov3        ; 5.188 ;       ;       ; 5.188 ;
+; cmdar_code[2] ; nop         ; 4.762 ;       ;       ; 4.762 ;
+; cmdar_code[2] ; not1        ;       ; 5.250 ; 5.250 ;       ;
+; cmdar_code[2] ; or1         ; 4.517 ;       ;       ; 4.517 ;
+; cmdar_code[2] ; out1        ;       ; 4.543 ; 4.543 ;       ;
+; cmdar_code[2] ; rsl         ; 4.732 ;       ;       ; 4.732 ;
+; cmdar_code[2] ; rsr         ; 5.231 ;       ;       ; 5.231 ;
+; cmdar_code[2] ; sub         ; 5.026 ;       ;       ; 5.026 ;
+; cmdar_code[3] ; add         ; 5.148 ;       ;       ; 5.148 ;
+; cmdar_code[3] ; halt        ;       ; 4.500 ; 4.500 ;       ;
+; cmdar_code[3] ; in1         ;       ; 4.895 ; 4.895 ;       ;
+; cmdar_code[3] ; jc          ; 4.790 ;       ;       ; 4.790 ;
+; cmdar_code[3] ; jmp         ; 5.136 ;       ;       ; 5.136 ;
+; cmdar_code[3] ; jz          ; 4.935 ;       ;       ; 4.935 ;
+; cmdar_code[3] ; mov1        ; 5.499 ;       ;       ; 5.499 ;
+; cmdar_code[3] ; mov2        ; 4.779 ;       ;       ; 4.779 ;
+; cmdar_code[3] ; mov3        ; 5.026 ;       ;       ; 5.026 ;
+; cmdar_code[3] ; nop         ; 4.751 ;       ;       ; 4.751 ;
+; cmdar_code[3] ; not1        ; 5.088 ;       ;       ; 5.088 ;
+; cmdar_code[3] ; or1         ; 4.661 ;       ;       ; 4.661 ;
+; cmdar_code[3] ; out1        ;       ; 4.480 ; 4.480 ;       ;
+; cmdar_code[3] ; rsl         ;       ; 4.744 ; 4.744 ;       ;
+; cmdar_code[3] ; rsr         ;       ; 5.243 ; 5.243 ;       ;
+; cmdar_code[3] ; sub         ;       ; 5.038 ; 5.038 ;       ;
+; cmdar_code[4] ; add         ;       ; 5.174 ; 5.174 ;       ;
+; cmdar_code[4] ; halt        ;       ; 4.546 ; 4.546 ;       ;
+; cmdar_code[4] ; in1         ;       ; 5.064 ; 5.064 ;       ;
+; cmdar_code[4] ; jc          ;       ; 4.847 ; 4.847 ;       ;
+; cmdar_code[4] ; jmp         ;       ; 5.193 ; 5.193 ;       ;
+; cmdar_code[4] ; jz          ;       ; 4.992 ; 4.992 ;       ;
+; cmdar_code[4] ; mov1        ;       ; 5.155 ; 5.155 ;       ;
+; cmdar_code[4] ; mov2        ; 4.739 ;       ;       ; 4.739 ;
+; cmdar_code[4] ; mov3        ;       ; 4.993 ; 4.993 ;       ;
+; cmdar_code[4] ; nop         ;       ; 4.808 ; 4.808 ;       ;
+; cmdar_code[4] ; not1        ;       ; 5.639 ; 5.639 ;       ;
+; cmdar_code[4] ; or1         ;       ; 4.788 ; 4.788 ;       ;
+; cmdar_code[4] ; out1        ;       ; 4.839 ; 4.839 ;       ;
+; cmdar_code[4] ; rsl         ;       ; 4.913 ; 4.913 ;       ;
+; cmdar_code[4] ; rsr         ;       ; 5.412 ; 5.412 ;       ;
+; cmdar_code[4] ; sub         ;       ; 5.207 ; 5.207 ;       ;
+; cmdar_code[5] ; add         ;       ; 5.040 ; 5.040 ;       ;
+; cmdar_code[5] ; halt        ;       ; 4.435 ; 4.435 ;       ;
+; cmdar_code[5] ; in1         ;       ; 4.940 ; 4.940 ;       ;
+; cmdar_code[5] ; jc          ;       ; 4.736 ; 4.736 ;       ;
+; cmdar_code[5] ; jmp         ;       ; 5.082 ; 5.082 ;       ;
+; cmdar_code[5] ; jz          ;       ; 4.881 ; 4.881 ;       ;
+; cmdar_code[5] ; mov2        ; 4.605 ;       ;       ; 4.605 ;
+; cmdar_code[5] ; mov3        ;       ; 4.883 ; 4.883 ;       ;
+; cmdar_code[5] ; nop         ;       ; 4.697 ; 4.697 ;       ;
+; cmdar_code[5] ; not1        ;       ; 5.505 ; 5.505 ;       ;
+; cmdar_code[5] ; or1         ;       ; 4.654 ; 4.654 ;       ;
+; cmdar_code[5] ; out1        ;       ; 4.705 ; 4.705 ;       ;
+; cmdar_code[5] ; rsl         ;       ; 4.789 ; 4.789 ;       ;
+; cmdar_code[5] ; rsr         ;       ; 5.288 ; 5.288 ;       ;
+; cmdar_code[5] ; sub         ;       ; 5.083 ; 5.083 ;       ;
+; cmdar_code[6] ; add         ;       ; 5.361 ; 5.361 ;       ;
+; cmdar_code[6] ; halt        ;       ; 4.831 ; 4.831 ;       ;
+; cmdar_code[6] ; jc          ; 4.390 ;       ;       ; 4.390 ;
+; cmdar_code[6] ; jmp         ;       ; 4.744 ; 4.744 ;       ;
+; cmdar_code[6] ; jz          ;       ; 4.468 ; 4.468 ;       ;
+; cmdar_code[6] ; mov1        ;       ; 5.712 ; 5.712 ;       ;
+; cmdar_code[6] ; mov2        ;       ; 4.992 ; 4.992 ;       ;
+; cmdar_code[6] ; mov3        ; 5.035 ;       ;       ; 5.035 ;
+; cmdar_code[6] ; nop         ;       ; 4.325 ; 4.325 ;       ;
+; cmdar_code[6] ; or1         ;       ; 4.874 ; 4.874 ;       ;
+; cmdar_code[6] ; rsl         ; 4.747 ;       ;       ; 4.747 ;
+; cmdar_code[6] ; rsr         ;       ; 5.216 ; 5.216 ;       ;
+; cmdar_code[6] ; sub         ;       ; 4.683 ; 4.683 ;       ;
+; cmdar_code[7] ; add         ;       ; 5.271 ; 5.271 ;       ;
+; cmdar_code[7] ; halt        ;       ; 4.656 ; 4.656 ;       ;
+; cmdar_code[7] ; jc          ;       ; 4.400 ; 4.400 ;       ;
+; cmdar_code[7] ; jmp         ;       ; 4.756 ; 4.756 ;       ;
+; cmdar_code[7] ; jz          ; 4.476 ;       ;       ; 4.476 ;
+; cmdar_code[7] ; mov1        ;       ; 5.622 ; 5.622 ;       ;
+; cmdar_code[7] ; mov2        ;       ; 4.902 ; 4.902 ;       ;
+; cmdar_code[7] ; mov3        ; 4.944 ;       ;       ; 4.944 ;
+; cmdar_code[7] ; nop         ;       ; 4.420 ; 4.420 ;       ;
+; cmdar_code[7] ; or1         ;       ; 4.784 ; 4.784 ;       ;
+; cmdar_code[7] ; rsl         ; 4.657 ;       ;       ; 4.657 ;
+; cmdar_code[7] ; rsr         ;       ; 5.041 ; 5.041 ;       ;
+; cmdar_code[7] ; sub         ;       ; 4.776 ; 4.776 ;       ;
+; enable        ; add         ; 3.325 ; 3.126 ; 3.126 ; 3.325 ;
+; enable        ; halt        ; 2.540 ;       ;       ; 2.540 ;
+; enable        ; in1         ; 3.007 ;       ;       ; 3.007 ;
+; enable        ; jc          ; 2.843 ;       ;       ; 2.843 ;
+; enable        ; jmp         ; 3.189 ;       ;       ; 3.189 ;
+; enable        ; jz          ; 2.988 ;       ;       ; 2.988 ;
+; enable        ; mov1        ; 3.676 ;       ;       ; 3.676 ;
+; enable        ; mov2        ; 2.956 ;       ;       ; 2.956 ;
+; enable        ; mov3        ; 2.990 ;       ;       ; 2.990 ;
+; enable        ; nop         ; 2.804 ;       ;       ; 2.804 ;
+; enable        ; not1        ; 3.661 ;       ;       ; 3.661 ;
+; enable        ; or1         ; 2.838 ; 2.564 ; 2.564 ; 2.838 ;
+; enable        ; out1        ; 2.861 ;       ;       ; 2.861 ;
+; enable        ; rsl         ; 2.856 ;       ;       ; 2.856 ;
+; enable        ; rsr         ; 3.355 ;       ;       ; 3.355 ;
+; enable        ; sub         ; 3.150 ; 2.950 ; 2.950 ; 3.150 ;
++---------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; N/A                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------+
+; Progagation Delay                                             ;
++---------------+-------------+-------+--------+--------+-------+
+; Input Port    ; Output Port ; RR    ; RF     ; FR     ; FF    ;
++---------------+-------------+-------+--------+--------+-------+
+; cmdar_code[0] ; add         ; 9.148 ;        ;        ; 9.148 ;
+; cmdar_code[0] ; halt        ; 8.474 ;        ;        ; 8.474 ;
+; cmdar_code[0] ; in1         ;       ; 8.464  ; 8.464  ;       ;
+; cmdar_code[0] ; jc          ;       ; 8.111  ; 8.111  ;       ;
+; cmdar_code[0] ; jmp         ;       ; 8.805  ; 8.805  ;       ;
+; cmdar_code[0] ; jz          ;       ; 8.357  ; 8.357  ;       ;
+; cmdar_code[0] ; mov1        ; 9.814 ;        ;        ; 9.814 ;
+; cmdar_code[0] ; mov2        ; 8.400 ;        ;        ; 8.400 ;
+; cmdar_code[0] ; mov3        ; 9.011 ;        ;        ; 9.011 ;
+; cmdar_code[0] ; nop         ;       ; 8.006  ; 8.006  ;       ;
+; cmdar_code[0] ; not1        ;       ; 9.195  ; 9.195  ;       ;
+; cmdar_code[0] ; or1         ; 8.078 ;        ;        ; 8.078 ;
+; cmdar_code[0] ; out1        ;       ; 7.855  ; 7.855  ;       ;
+; cmdar_code[0] ; rsl         ; 8.140 ;        ;        ; 8.140 ;
+; cmdar_code[0] ; rsr         ; 9.278 ;        ;        ; 9.278 ;
+; cmdar_code[0] ; sub         ;       ; 8.037  ; 8.037  ;       ;
+; cmdar_code[1] ; add         ;       ; 8.750  ; 8.750  ;       ;
+; cmdar_code[1] ; halt        ;       ; 8.385  ; 8.385  ;       ;
+; cmdar_code[1] ; in1         ;       ; 8.375  ; 8.375  ;       ;
+; cmdar_code[1] ; jc          ;       ; 7.807  ; 7.807  ;       ;
+; cmdar_code[1] ; jmp         ;       ; 8.500  ; 8.500  ;       ;
+; cmdar_code[1] ; jz          ;       ; 7.924  ; 7.924  ;       ;
+; cmdar_code[1] ; mov1        ; 9.089 ;        ;        ; 9.089 ;
+; cmdar_code[1] ; mov2        ; 7.640 ;        ;        ; 7.640 ;
+; cmdar_code[1] ; mov3        ; 9.081 ;        ;        ; 9.081 ;
+; cmdar_code[1] ; nop         ; 7.394 ;        ;        ; 7.394 ;
+; cmdar_code[1] ; not1        ; 9.099 ;        ;        ; 9.099 ;
+; cmdar_code[1] ; or1         ;       ; 7.716  ; 7.716  ;       ;
+; cmdar_code[1] ; out1        ; 7.920 ;        ;        ; 7.920 ;
+; cmdar_code[1] ; rsl         ;       ; 7.887  ; 7.887  ;       ;
+; cmdar_code[1] ; rsr         ;       ; 9.189  ; 9.189  ;       ;
+; cmdar_code[1] ; sub         ; 7.840 ;        ;        ; 7.840 ;
+; cmdar_code[2] ; add         ;       ; 8.831  ; 8.831  ;       ;
+; cmdar_code[2] ; halt        ;       ; 7.500  ; 7.500  ;       ;
+; cmdar_code[2] ; in1         ; 8.500 ;        ;        ; 8.500 ;
+; cmdar_code[2] ; jc          ; 8.342 ;        ;        ; 8.342 ;
+; cmdar_code[2] ; jmp         ; 9.036 ;        ;        ; 9.036 ;
+; cmdar_code[2] ; jz          ; 8.588 ;        ;        ; 8.588 ;
+; cmdar_code[2] ; mov1        ; 9.354 ;        ;        ; 9.354 ;
+; cmdar_code[2] ; mov2        ; 7.940 ;        ;        ; 7.940 ;
+; cmdar_code[2] ; mov3        ; 9.117 ;        ;        ; 9.117 ;
+; cmdar_code[2] ; nop         ; 8.237 ;        ;        ; 8.237 ;
+; cmdar_code[2] ; not1        ;       ; 9.135  ; 9.135  ;       ;
+; cmdar_code[2] ; or1         ; 7.797 ;        ;        ; 7.797 ;
+; cmdar_code[2] ; out1        ;       ; 7.842  ; 7.842  ;       ;
+; cmdar_code[2] ; rsl         ; 8.171 ;        ;        ; 8.171 ;
+; cmdar_code[2] ; rsr         ; 9.249 ;        ;        ; 9.249 ;
+; cmdar_code[2] ; sub         ; 8.579 ;        ;        ; 8.579 ;
+; cmdar_code[3] ; add         ; 9.069 ;        ;        ; 9.069 ;
+; cmdar_code[3] ; halt        ;       ; 7.770  ; 7.770  ;       ;
+; cmdar_code[3] ; in1         ;       ; 8.559  ; 8.559  ;       ;
+; cmdar_code[3] ; jc          ; 8.326 ;        ;        ; 8.326 ;
+; cmdar_code[3] ; jmp         ; 9.020 ;        ;        ; 9.020 ;
+; cmdar_code[3] ; jz          ; 8.572 ;        ;        ; 8.572 ;
+; cmdar_code[3] ; mov1        ; 9.735 ;        ;        ; 9.735 ;
+; cmdar_code[3] ; mov2        ; 8.321 ;        ;        ; 8.321 ;
+; cmdar_code[3] ; mov3        ; 8.778 ;        ;        ; 8.778 ;
+; cmdar_code[3] ; nop         ; 8.221 ;        ;        ; 8.221 ;
+; cmdar_code[3] ; not1        ; 8.795 ;        ;        ; 8.795 ;
+; cmdar_code[3] ; or1         ; 7.999 ;        ;        ; 7.999 ;
+; cmdar_code[3] ; out1        ;       ; 7.709  ; 7.709  ;       ;
+; cmdar_code[3] ; rsl         ;       ; 8.230  ; 8.230  ;       ;
+; cmdar_code[3] ; rsr         ;       ; 9.308  ; 9.308  ;       ;
+; cmdar_code[3] ; sub         ;       ; 8.638  ; 8.638  ;       ;
+; cmdar_code[4] ; add         ;       ; 9.141  ; 9.141  ;       ;
+; cmdar_code[4] ; halt        ;       ; 7.873  ; 7.873  ;       ;
+; cmdar_code[4] ; in1         ;       ; 8.916  ; 8.916  ;       ;
+; cmdar_code[4] ; jc          ;       ; 8.441  ; 8.441  ;       ;
+; cmdar_code[4] ; jmp         ;       ; 9.135  ; 9.135  ;       ;
+; cmdar_code[4] ; jz          ;       ; 8.687  ; 8.687  ;       ;
+; cmdar_code[4] ; mov1        ;       ; 9.049  ; 9.049  ;       ;
+; cmdar_code[4] ; mov2        ; 8.236 ;        ;        ; 8.236 ;
+; cmdar_code[4] ; mov3        ;       ; 8.783  ; 8.783  ;       ;
+; cmdar_code[4] ; nop         ;       ; 8.336  ; 8.336  ;       ;
+; cmdar_code[4] ; not1        ;       ; 9.866  ; 9.866  ;       ;
+; cmdar_code[4] ; or1         ;       ; 8.314  ; 8.314  ;       ;
+; cmdar_code[4] ; out1        ;       ; 8.399  ; 8.399  ;       ;
+; cmdar_code[4] ; rsl         ;       ; 8.587  ; 8.587  ;       ;
+; cmdar_code[4] ; rsr         ;       ; 9.665  ; 9.665  ;       ;
+; cmdar_code[4] ; sub         ;       ; 8.995  ; 8.995  ;       ;
+; cmdar_code[5] ; add         ;       ; 8.888  ; 8.888  ;       ;
+; cmdar_code[5] ; halt        ;       ; 7.629  ; 7.629  ;       ;
+; cmdar_code[5] ; in1         ;       ; 8.645  ; 8.645  ;       ;
+; cmdar_code[5] ; jc          ;       ; 8.197  ; 8.197  ;       ;
+; cmdar_code[5] ; jmp         ;       ; 8.891  ; 8.891  ;       ;
+; cmdar_code[5] ; jz          ;       ; 8.443  ; 8.443  ;       ;
+; cmdar_code[5] ; mov2        ; 7.983 ;        ;        ; 7.983 ;
+; cmdar_code[5] ; mov3        ;       ; 8.539  ; 8.539  ;       ;
+; cmdar_code[5] ; nop         ;       ; 8.092  ; 8.092  ;       ;
+; cmdar_code[5] ; not1        ;       ; 9.613  ; 9.613  ;       ;
+; cmdar_code[5] ; or1         ;       ; 8.061  ; 8.061  ;       ;
+; cmdar_code[5] ; out1        ;       ; 8.146  ; 8.146  ;       ;
+; cmdar_code[5] ; rsl         ;       ; 8.316  ; 8.316  ;       ;
+; cmdar_code[5] ; rsr         ;       ; 9.394  ; 9.394  ;       ;
+; cmdar_code[5] ; sub         ;       ; 8.724  ; 8.724  ;       ;
+; cmdar_code[6] ; add         ;       ; 9.515  ; 9.515  ;       ;
+; cmdar_code[6] ; halt        ;       ; 8.476  ; 8.476  ;       ;
+; cmdar_code[6] ; jc          ; 7.590 ;        ;        ; 7.590 ;
+; cmdar_code[6] ; jmp         ;       ; 8.289  ; 8.289  ;       ;
+; cmdar_code[6] ; jz          ;       ; 7.708  ; 7.708  ;       ;
+; cmdar_code[6] ; mov1        ;       ; 10.181 ; 10.181 ;       ;
+; cmdar_code[6] ; mov2        ;       ; 8.767  ; 8.767  ;       ;
+; cmdar_code[6] ; mov3        ; 8.903 ;        ;        ; 8.903 ;
+; cmdar_code[6] ; nop         ;       ; 7.440  ; 7.440  ;       ;
+; cmdar_code[6] ; or1         ;       ; 8.445  ; 8.445  ;       ;
+; cmdar_code[6] ; rsl         ; 8.301 ;        ;        ; 8.301 ;
+; cmdar_code[6] ; rsr         ;       ; 9.280  ; 9.280  ;       ;
+; cmdar_code[6] ; sub         ;       ; 7.956  ; 7.956  ;       ;
+; cmdar_code[7] ; add         ;       ; 9.276  ; 9.276  ;       ;
+; cmdar_code[7] ; halt        ;       ; 8.062  ; 8.062  ;       ;
+; cmdar_code[7] ; jc          ;       ; 7.550  ; 7.550  ;       ;
+; cmdar_code[7] ; jmp         ;       ; 8.251  ; 8.251  ;       ;
+; cmdar_code[7] ; jz          ; 7.666 ;        ;        ; 7.666 ;
+; cmdar_code[7] ; mov1        ;       ; 9.942  ; 9.942  ;       ;
+; cmdar_code[7] ; mov2        ;       ; 8.528  ; 8.528  ;       ;
+; cmdar_code[7] ; mov3        ; 8.661 ;        ;        ; 8.661 ;
+; cmdar_code[7] ; nop         ;       ; 7.583  ; 7.583  ;       ;
+; cmdar_code[7] ; or1         ;       ; 8.206  ; 8.206  ;       ;
+; cmdar_code[7] ; rsl         ; 8.062 ;        ;        ; 8.062 ;
+; cmdar_code[7] ; rsr         ;       ; 8.866  ; 8.866  ;       ;
+; cmdar_code[7] ; sub         ;       ; 8.097  ; 8.097  ;       ;
+; enable        ; add         ; 6.147 ; 5.839  ; 5.839  ; 6.147 ;
+; enable        ; halt        ; 4.611 ;        ;        ; 4.611 ;
+; enable        ; in1         ; 5.535 ;        ;        ; 5.535 ;
+; enable        ; jc          ; 5.181 ;        ;        ; 5.181 ;
+; enable        ; jmp         ; 5.875 ;        ;        ; 5.875 ;
+; enable        ; jz          ; 5.427 ;        ;        ; 5.427 ;
+; enable        ; mov1        ; 6.813 ;        ;        ; 6.813 ;
+; enable        ; mov2        ; 5.399 ;        ;        ; 5.399 ;
+; enable        ; mov3        ; 5.522 ;        ;        ; 5.522 ;
+; enable        ; nop         ; 5.076 ;        ;        ; 5.076 ;
+; enable        ; not1        ; 6.683 ;        ;        ; 6.683 ;
+; enable        ; or1         ; 5.077 ; 4.650  ; 4.650  ; 5.077 ;
+; enable        ; out1        ; 5.216 ;        ;        ; 5.216 ;
+; enable        ; rsl         ; 5.206 ;        ;        ; 5.206 ;
+; enable        ; rsr         ; 6.284 ;        ;        ; 6.284 ;
+; enable        ; sub         ; 5.614 ; 5.209  ; 5.209  ; 5.614 ;
++---------------+-------------+-------+--------+--------+-------+
+
+
++-------------------------------------------------------------+
+; Minimum Progagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; cmdar_code[0] ; add         ; 5.221 ;       ;       ; 5.221 ;
+; cmdar_code[0] ; halt        ; 4.859 ;       ;       ; 4.859 ;
+; cmdar_code[0] ; in1         ;       ; 4.846 ; 4.846 ;       ;
+; cmdar_code[0] ; jc          ;       ; 4.705 ; 4.705 ;       ;
+; cmdar_code[0] ; jmp         ;       ; 5.051 ; 5.051 ;       ;
+; cmdar_code[0] ; jz          ;       ; 4.850 ; 4.850 ;       ;
+; cmdar_code[0] ; mov1        ; 5.572 ;       ;       ; 5.572 ;
+; cmdar_code[0] ; mov2        ; 4.852 ;       ;       ; 4.852 ;
+; cmdar_code[0] ; mov3        ; 5.147 ;       ;       ; 5.147 ;
+; cmdar_code[0] ; nop         ;       ; 4.666 ; 4.666 ;       ;
+; cmdar_code[0] ; not1        ;       ; 5.259 ; 5.259 ;       ;
+; cmdar_code[0] ; or1         ; 4.734 ;       ;       ; 4.734 ;
+; cmdar_code[0] ; out1        ;       ; 4.561 ; 4.561 ;       ;
+; cmdar_code[0] ; rsl         ; 4.667 ;       ;       ; 4.667 ;
+; cmdar_code[0] ; rsr         ; 5.244 ;       ;       ; 5.244 ;
+; cmdar_code[0] ; sub         ;       ; 4.749 ; 4.749 ;       ;
+; cmdar_code[1] ; add         ;       ; 4.984 ; 4.984 ;       ;
+; cmdar_code[1] ; halt        ;       ; 4.813 ; 4.813 ;       ;
+; cmdar_code[1] ; in1         ;       ; 4.800 ; 4.800 ;       ;
+; cmdar_code[1] ; jc          ;       ; 4.521 ; 4.521 ;       ;
+; cmdar_code[1] ; jmp         ;       ; 4.868 ; 4.868 ;       ;
+; cmdar_code[1] ; jz          ;       ; 4.598 ; 4.598 ;       ;
+; cmdar_code[1] ; mov1        ; 5.182 ;       ;       ; 5.182 ;
+; cmdar_code[1] ; mov2        ; 4.457 ;       ;       ; 4.457 ;
+; cmdar_code[1] ; mov3        ; 5.177 ;       ;       ; 5.177 ;
+; cmdar_code[1] ; nop         ; 4.342 ;       ;       ; 4.342 ;
+; cmdar_code[1] ; not1        ; 5.239 ;       ;       ; 5.239 ;
+; cmdar_code[1] ; or1         ;       ; 4.502 ; 4.502 ;       ;
+; cmdar_code[1] ; out1        ; 4.595 ;       ;       ; 4.595 ;
+; cmdar_code[1] ; rsl         ;       ; 4.583 ; 4.583 ;       ;
+; cmdar_code[1] ; rsr         ;       ; 5.198 ; 5.198 ;       ;
+; cmdar_code[1] ; sub         ; 4.660 ;       ;       ; 4.660 ;
+; cmdar_code[2] ; add         ;       ; 4.999 ; 4.999 ;       ;
+; cmdar_code[2] ; halt        ;       ; 4.380 ; 4.380 ;       ;
+; cmdar_code[2] ; in1         ; 4.883 ;       ;       ; 4.883 ;
+; cmdar_code[2] ; jc          ; 4.801 ;       ;       ; 4.801 ;
+; cmdar_code[2] ; jmp         ; 5.147 ;       ;       ; 5.147 ;
+; cmdar_code[2] ; jz          ; 4.946 ;       ;       ; 4.946 ;
+; cmdar_code[2] ; mov1        ; 5.295 ;       ;       ; 5.295 ;
+; cmdar_code[2] ; mov2        ; 4.575 ;       ;       ; 4.575 ;
+; cmdar_code[2] ; mov3        ; 5.188 ;       ;       ; 5.188 ;
+; cmdar_code[2] ; nop         ; 4.762 ;       ;       ; 4.762 ;
+; cmdar_code[2] ; not1        ;       ; 5.250 ; 5.250 ;       ;
+; cmdar_code[2] ; or1         ; 4.517 ;       ;       ; 4.517 ;
+; cmdar_code[2] ; out1        ;       ; 4.543 ; 4.543 ;       ;
+; cmdar_code[2] ; rsl         ; 4.732 ;       ;       ; 4.732 ;
+; cmdar_code[2] ; rsr         ; 5.231 ;       ;       ; 5.231 ;
+; cmdar_code[2] ; sub         ; 5.026 ;       ;       ; 5.026 ;
+; cmdar_code[3] ; add         ; 5.148 ;       ;       ; 5.148 ;
+; cmdar_code[3] ; halt        ;       ; 4.500 ; 4.500 ;       ;
+; cmdar_code[3] ; in1         ;       ; 4.895 ; 4.895 ;       ;
+; cmdar_code[3] ; jc          ; 4.790 ;       ;       ; 4.790 ;
+; cmdar_code[3] ; jmp         ; 5.136 ;       ;       ; 5.136 ;
+; cmdar_code[3] ; jz          ; 4.935 ;       ;       ; 4.935 ;
+; cmdar_code[3] ; mov1        ; 5.499 ;       ;       ; 5.499 ;
+; cmdar_code[3] ; mov2        ; 4.779 ;       ;       ; 4.779 ;
+; cmdar_code[3] ; mov3        ; 5.026 ;       ;       ; 5.026 ;
+; cmdar_code[3] ; nop         ; 4.751 ;       ;       ; 4.751 ;
+; cmdar_code[3] ; not1        ; 5.088 ;       ;       ; 5.088 ;
+; cmdar_code[3] ; or1         ; 4.661 ;       ;       ; 4.661 ;
+; cmdar_code[3] ; out1        ;       ; 4.480 ; 4.480 ;       ;
+; cmdar_code[3] ; rsl         ;       ; 4.744 ; 4.744 ;       ;
+; cmdar_code[3] ; rsr         ;       ; 5.243 ; 5.243 ;       ;
+; cmdar_code[3] ; sub         ;       ; 5.038 ; 5.038 ;       ;
+; cmdar_code[4] ; add         ;       ; 5.174 ; 5.174 ;       ;
+; cmdar_code[4] ; halt        ;       ; 4.546 ; 4.546 ;       ;
+; cmdar_code[4] ; in1         ;       ; 5.064 ; 5.064 ;       ;
+; cmdar_code[4] ; jc          ;       ; 4.847 ; 4.847 ;       ;
+; cmdar_code[4] ; jmp         ;       ; 5.193 ; 5.193 ;       ;
+; cmdar_code[4] ; jz          ;       ; 4.992 ; 4.992 ;       ;
+; cmdar_code[4] ; mov1        ;       ; 5.155 ; 5.155 ;       ;
+; cmdar_code[4] ; mov2        ; 4.739 ;       ;       ; 4.739 ;
+; cmdar_code[4] ; mov3        ;       ; 4.993 ; 4.993 ;       ;
+; cmdar_code[4] ; nop         ;       ; 4.808 ; 4.808 ;       ;
+; cmdar_code[4] ; not1        ;       ; 5.639 ; 5.639 ;       ;
+; cmdar_code[4] ; or1         ;       ; 4.788 ; 4.788 ;       ;
+; cmdar_code[4] ; out1        ;       ; 4.839 ; 4.839 ;       ;
+; cmdar_code[4] ; rsl         ;       ; 4.913 ; 4.913 ;       ;
+; cmdar_code[4] ; rsr         ;       ; 5.412 ; 5.412 ;       ;
+; cmdar_code[4] ; sub         ;       ; 5.207 ; 5.207 ;       ;
+; cmdar_code[5] ; add         ;       ; 5.040 ; 5.040 ;       ;
+; cmdar_code[5] ; halt        ;       ; 4.435 ; 4.435 ;       ;
+; cmdar_code[5] ; in1         ;       ; 4.940 ; 4.940 ;       ;
+; cmdar_code[5] ; jc          ;       ; 4.736 ; 4.736 ;       ;
+; cmdar_code[5] ; jmp         ;       ; 5.082 ; 5.082 ;       ;
+; cmdar_code[5] ; jz          ;       ; 4.881 ; 4.881 ;       ;
+; cmdar_code[5] ; mov2        ; 4.605 ;       ;       ; 4.605 ;
+; cmdar_code[5] ; mov3        ;       ; 4.883 ; 4.883 ;       ;
+; cmdar_code[5] ; nop         ;       ; 4.697 ; 4.697 ;       ;
+; cmdar_code[5] ; not1        ;       ; 5.505 ; 5.505 ;       ;
+; cmdar_code[5] ; or1         ;       ; 4.654 ; 4.654 ;       ;
+; cmdar_code[5] ; out1        ;       ; 4.705 ; 4.705 ;       ;
+; cmdar_code[5] ; rsl         ;       ; 4.789 ; 4.789 ;       ;
+; cmdar_code[5] ; rsr         ;       ; 5.288 ; 5.288 ;       ;
+; cmdar_code[5] ; sub         ;       ; 5.083 ; 5.083 ;       ;
+; cmdar_code[6] ; add         ;       ; 5.361 ; 5.361 ;       ;
+; cmdar_code[6] ; halt        ;       ; 4.831 ; 4.831 ;       ;
+; cmdar_code[6] ; jc          ; 4.390 ;       ;       ; 4.390 ;
+; cmdar_code[6] ; jmp         ;       ; 4.744 ; 4.744 ;       ;
+; cmdar_code[6] ; jz          ;       ; 4.468 ; 4.468 ;       ;
+; cmdar_code[6] ; mov1        ;       ; 5.712 ; 5.712 ;       ;
+; cmdar_code[6] ; mov2        ;       ; 4.992 ; 4.992 ;       ;
+; cmdar_code[6] ; mov3        ; 5.035 ;       ;       ; 5.035 ;
+; cmdar_code[6] ; nop         ;       ; 4.325 ; 4.325 ;       ;
+; cmdar_code[6] ; or1         ;       ; 4.874 ; 4.874 ;       ;
+; cmdar_code[6] ; rsl         ; 4.747 ;       ;       ; 4.747 ;
+; cmdar_code[6] ; rsr         ;       ; 5.216 ; 5.216 ;       ;
+; cmdar_code[6] ; sub         ;       ; 4.683 ; 4.683 ;       ;
+; cmdar_code[7] ; add         ;       ; 5.271 ; 5.271 ;       ;
+; cmdar_code[7] ; halt        ;       ; 4.656 ; 4.656 ;       ;
+; cmdar_code[7] ; jc          ;       ; 4.400 ; 4.400 ;       ;
+; cmdar_code[7] ; jmp         ;       ; 4.756 ; 4.756 ;       ;
+; cmdar_code[7] ; jz          ; 4.476 ;       ;       ; 4.476 ;
+; cmdar_code[7] ; mov1        ;       ; 5.622 ; 5.622 ;       ;
+; cmdar_code[7] ; mov2        ;       ; 4.902 ; 4.902 ;       ;
+; cmdar_code[7] ; mov3        ; 4.944 ;       ;       ; 4.944 ;
+; cmdar_code[7] ; nop         ;       ; 4.420 ; 4.420 ;       ;
+; cmdar_code[7] ; or1         ;       ; 4.784 ; 4.784 ;       ;
+; cmdar_code[7] ; rsl         ; 4.657 ;       ;       ; 4.657 ;
+; cmdar_code[7] ; rsr         ;       ; 5.041 ; 5.041 ;       ;
+; cmdar_code[7] ; sub         ;       ; 4.776 ; 4.776 ;       ;
+; enable        ; add         ; 3.325 ; 3.126 ; 3.126 ; 3.325 ;
+; enable        ; halt        ; 2.540 ;       ;       ; 2.540 ;
+; enable        ; in1         ; 3.007 ;       ;       ; 3.007 ;
+; enable        ; jc          ; 2.843 ;       ;       ; 2.843 ;
+; enable        ; jmp         ; 3.189 ;       ;       ; 3.189 ;
+; enable        ; jz          ; 2.988 ;       ;       ; 2.988 ;
+; enable        ; mov1        ; 3.676 ;       ;       ; 3.676 ;
+; enable        ; mov2        ; 2.956 ;       ;       ; 2.956 ;
+; enable        ; mov3        ; 2.990 ;       ;       ; 2.990 ;
+; enable        ; nop         ; 2.804 ;       ;       ; 2.804 ;
+; enable        ; not1        ; 3.661 ;       ;       ; 3.661 ;
+; enable        ; or1         ; 2.838 ; 2.564 ; 2.564 ; 2.838 ;
+; enable        ; out1        ; 2.861 ;       ;       ; 2.861 ;
+; enable        ; rsl         ; 2.856 ;       ;       ; 2.856 ;
+; enable        ; rsr         ; 3.355 ;       ;       ; 3.355 ;
+; enable        ; sub         ; 3.150 ; 2.950 ; 2.950 ; 3.150 ;
++---------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+No clock transfers to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design.
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design.
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 137   ; 137  ;
+; Unconstrained Output Ports      ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 137   ; 137  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II TimeQuest Timing Analyzer
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Nov 07 20:48:05 2020
+Info: Command: quartus_sta cmddecoder -c cmddecoder
+Info: qsta_default_script.tcl version: #1
+Warning: Found USE_TIMEQUEST_TIMING_ANALYZER=OFF. The TimeQuest Timing Analyzer is not the default Timing Analysis Tool during full compilation.
+Critical Warning: Synopsys Design Constraints File file not found: 'cmddecoder.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info: No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info: The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning: No clocks defined in design.
+Info: No clocks to report
+Info: Analyzing Slow Model
+Info: No fmax paths to report
+Info: No setup paths to report
+Info: No hold paths to report
+Info: No recovery paths to report
+Info: No removal paths to report
+Info: No minimum pulse width or minimum period width checks to report
+Info: The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info: Started post-fitting delay annotation
+Warning: Found 16 output pins without output pin load capacitance assignment
+    Info: Pin "mov1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "mov2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "mov3" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "add" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "sub" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "or1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "not1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "rsr" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "rsl" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "jmp" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "jz" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "jc" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "in1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "out1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "nop" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "halt" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info: Delay annotation completed successfully
+Info: No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info: The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning: No clocks defined in design.
+Info: No setup paths to report
+Info: No hold paths to report
+Info: No recovery paths to report
+Info: No removal paths to report
+Info: No minimum pulse width or minimum period width checks to report
+Info: The selected device family is not supported by the report_metastability command.
+Warning: At least one of the filters had some problems and could not be matched.
+    Warning: * could not be matched with a clock.
+Info: Design is not fully constrained for setup requirements
+Info: Design is not fully constrained for hold requirements
+Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 229 megabytes
+    Info: Processing ended: Sat Nov 07 20:48:05 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

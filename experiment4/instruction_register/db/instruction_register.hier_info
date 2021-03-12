@@ -1,0 +1,35 @@
+|instruction_register
+inputs[0] => i[0].DATAIN
+inputs[1] => i[1].DATAIN
+inputs[2] => i[2].DATAIN
+inputs[3] => i[3].DATAIN
+inputs[4] => i[4].DATAIN
+inputs[5] => i[5].DATAIN
+inputs[6] => i[6].DATAIN
+inputs[7] => i[7].DATAIN
+clk => i[7].CLK
+clk => i[6].CLK
+clk => i[5].CLK
+clk => i[4].CLK
+clk => i[3].CLK
+clk => i[2].CLK
+clk => i[1].CLK
+clk => i[0].CLK
+ld => i[0].ENA
+ld => i[1].ENA
+ld => i[2].ENA
+ld => i[3].ENA
+ld => i[4].ENA
+ld => i[5].ENA
+ld => i[6].ENA
+ld => i[7].ENA
+outputs[0] <= i[0].DB_MAX_OUTPUT_PORT_TYPE
+outputs[1] <= i[1].DB_MAX_OUTPUT_PORT_TYPE
+outputs[2] <= i[2].DB_MAX_OUTPUT_PORT_TYPE
+outputs[3] <= i[3].DB_MAX_OUTPUT_PORT_TYPE
+outputs[4] <= i[4].DB_MAX_OUTPUT_PORT_TYPE
+outputs[5] <= i[5].DB_MAX_OUTPUT_PORT_TYPE
+outputs[6] <= i[6].DB_MAX_OUTPUT_PORT_TYPE
+outputs[7] <= i[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

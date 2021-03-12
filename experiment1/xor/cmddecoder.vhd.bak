@@ -1,0 +1,79 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity cmddecoder is
+	port(
+		cmdar_code: in std_logic_vector(7 downto 0);
+		ison: in std_logic;
+		mov1, mov2, mov3, add, sub, or1, not1, rsr, rsl, jmp, jz, jc, in1, out1, nop, halt: out std_logic
+	);
+end entity cmddecoder;
+
+architecture cmddecoder of cmddecoder is
+	signal cmdcode: std_logic_vector(3 downto 0);
+	signal r1code,r2code: std_logic_vector(1 downto 0);
+	begin
+		cmdcode <= cmdar_code(3 downto 0);
+		r1code <= cmdar_code(5 downto 4);
+		r2code <= cmdar_code(7 downto 6);
+		process
+		begin
+			mov1 <= '0';
+			mov2 <= '0';
+			mov3 <= '0';
+			add <= '0';
+			sub <= '0';
+			or1 <= '0';
+			not1 <= '0';
+			rsr <= '0';
+			rsl <= '0';
+			jmp <= '0';
+			jz <= '0';
+			jc <= '0';
+			in1 <= '0';
+			out1 <= '0';
+			nop <= '0';
+			halt <= '0';
+			if ison='1' then
+				if cmdcode="1111" then
+					if r1code="11" then
+						mov2 <= '1';
+					elsif r2code="11" then
+						mov3 <= '1';
+					else
+						mov1 <= '1';
+					end if;
+				elsif cmdcode="1001" then
+					add <= '1';
+				elsif cmdcode="0110" then
+					sub <= '1';
+				elsif cmdcode="1011" then
+					or1 <= '1';
+				elsif cmdcode="0101" then 
+					not1 <= '1';
+				elsif cmdcode="1010" then
+					if r2code="00" then
+						rsr <= '1';
+					elsif r2code="11" then
+						rsl <= '1';
+					end if;
+				elsif cmdcode="0011" then
+					if r2code="00" then
+						jmp <= '1';
+					elsif r2code="01" then
+						jz <= '1';
+					elsif r2code="10" then
+						jc <= '1';
+					end if;
+				elsif cmdcode="0010" then
+					in1 <= '1';
+				elsif cmdcode="0100" then
+					out1 <= '1';
+				elsif cmdcode="0111" then
+					nop <= '1';
+				elsif cmdcode="1000" then
+					halt <= '1';
+				end if;
+			end if;
+		end process;
+	end architecture cmddecoder;

@@ -1,0 +1,68 @@
+MIF/HEX Update report for twoin_xor
+Tue Nov 03 20:33:59 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------+
+; MIF/HEX Update Summary                                    ;
++-----------------------+-----------------------------------+
+; MIF/HEX Update Status ; Failed - Tue Nov 03 20:33:59 2020 ;
+; Revision Name         ; twoin_xor                         ;
+; Top-level Entity Name ; twoin_xor                         ;
+; Family                ; Stratix II                        ;
+; Device                ; EP2S15F484C3                      ;
++-----------------------+-----------------------------------+
+
+
++--------------------------------+
+; MIF/HEX Update Processed Files ;
++--------------------------------+
+; File Name                      ;
++--------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II MIF/HEX Update
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Nov 03 20:33:59 2020
+Info: Command: quartus_cdb twoin_xor -c twoin_xor --update_mif
+Error: Found no Memory Initialization Files to process
+Error: Quartus II MIF/HEX Update was unsuccessful. 1 error, 0 warnings
+    Error: Peak virtual memory: 248 megabytes
+    Error: Processing ended: Tue Nov 03 20:33:59 2020
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:00
+
+

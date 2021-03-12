@@ -1,0 +1,30 @@
+|generic_mux_8_1
+inputs[0] => generic1:g1.genein[0]
+inputs[1] => generic1:g1.genein[1]
+inputs[2] => generic1:g1.genein[2]
+inputs[3] => generic1:g1.genein[3]
+inputs[4] => generic1:g1.genein[4]
+inputs[5] => generic1:g1.genein[5]
+inputs[6] => generic1:g1.genein[6]
+inputs[7] => generic1:g1.genein[7]
+output <= generic1:g1.geneout
+selects[0] => generic1:g1.genesel[0]
+selects[1] => generic1:g1.genesel[1]
+selects[2] => generic1:g1.genesel[2]
+
+
+|generic_mux_8_1|generic1:g1
+genein[0] => Mux0.IN7
+genein[1] => Mux0.IN6
+genein[2] => Mux0.IN5
+genein[3] => Mux0.IN4
+genein[4] => Mux0.IN3
+genein[5] => Mux0.IN2
+genein[6] => Mux0.IN1
+genein[7] => Mux0.IN0
+genesel[0] => Mux0.IN10
+genesel[1] => Mux0.IN9
+genesel[2] => Mux0.IN8
+geneout <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

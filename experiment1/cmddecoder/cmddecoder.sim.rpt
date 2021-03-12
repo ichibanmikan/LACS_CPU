@@ -1,0 +1,300 @@
+Simulator report for cmddecoder
+Sat Nov 07 20:07:43 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 104 nodes    ;
+; Simulation Coverage         ;      66.35 % ;
+; Total Number of Transitions ; 5388         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Functional     ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; cmddecoder.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      66.35 % ;
+; Total nodes checked                                 ; 104          ;
+; Total output ports checked                          ; 104          ;
+; Total output ports with complete 1/0-value coverage ; 69           ;
+; Total output ports with no 1/0-value coverage       ; 35           ;
+; Total output ports with no 1-value coverage         ; 35           ;
+; Total output ports with no 0-value coverage         ; 35           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                              ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |cmddecoder|r1~0          ; |cmddecoder|r1~0          ; out0             ;
+; |cmddecoder|r2~0          ; |cmddecoder|r2~0          ; out0             ;
+; |cmddecoder|mov1~0        ; |cmddecoder|mov1~0        ; out0             ;
+; |cmddecoder|mov1~1        ; |cmddecoder|mov1~1        ; out0             ;
+; |cmddecoder|mov1~2        ; |cmddecoder|mov1~2        ; out0             ;
+; |cmddecoder|mov1~3        ; |cmddecoder|mov1~3        ; out0             ;
+; |cmddecoder|mov1~4        ; |cmddecoder|mov1~4        ; out0             ;
+; |cmddecoder|mov1~5        ; |cmddecoder|mov1~5        ; out0             ;
+; |cmddecoder|mov2~0        ; |cmddecoder|mov2~0        ; out0             ;
+; |cmddecoder|mov2~1        ; |cmddecoder|mov2~1        ; out0             ;
+; |cmddecoder|mov2~2        ; |cmddecoder|mov2~2        ; out0             ;
+; |cmddecoder|mov3~0        ; |cmddecoder|mov3~0        ; out0             ;
+; |cmddecoder|mov3~1        ; |cmddecoder|mov3~1        ; out0             ;
+; |cmddecoder|mov3~2        ; |cmddecoder|mov3~2        ; out0             ;
+; |cmddecoder|add~0         ; |cmddecoder|add~0         ; out0             ;
+; |cmddecoder|add~1         ; |cmddecoder|add~1         ; out0             ;
+; |cmddecoder|add~2         ; |cmddecoder|add~2         ; out0             ;
+; |cmddecoder|add~3         ; |cmddecoder|add~3         ; out0             ;
+; |cmddecoder|add~4         ; |cmddecoder|add~4         ; out0             ;
+; |cmddecoder|sub~0         ; |cmddecoder|sub~0         ; out0             ;
+; |cmddecoder|sub~1         ; |cmddecoder|sub~1         ; out0             ;
+; |cmddecoder|sub~2         ; |cmddecoder|sub~2         ; out0             ;
+; |cmddecoder|sub~3         ; |cmddecoder|sub~3         ; out0             ;
+; |cmddecoder|sub~4         ; |cmddecoder|sub~4         ; out0             ;
+; |cmddecoder|or1~0         ; |cmddecoder|or1~0         ; out0             ;
+; |cmddecoder|or1~1         ; |cmddecoder|or1~1         ; out0             ;
+; |cmddecoder|or1~2         ; |cmddecoder|or1~2         ; out0             ;
+; |cmddecoder|or1~3         ; |cmddecoder|or1~3         ; out0             ;
+; |cmddecoder|not1~0        ; |cmddecoder|not1~0        ; out0             ;
+; |cmddecoder|not1~1        ; |cmddecoder|not1~1        ; out0             ;
+; |cmddecoder|not1~2        ; |cmddecoder|not1~2        ; out0             ;
+; |cmddecoder|rsr~0         ; |cmddecoder|rsr~0         ; out0             ;
+; |cmddecoder|rsr~1         ; |cmddecoder|rsr~1         ; out0             ;
+; |cmddecoder|rsr~2         ; |cmddecoder|rsr~2         ; out0             ;
+; |cmddecoder|rsr~3         ; |cmddecoder|rsr~3         ; out0             ;
+; |cmddecoder|rsl~0         ; |cmddecoder|rsl~0         ; out0             ;
+; |cmddecoder|rsl~1         ; |cmddecoder|rsl~1         ; out0             ;
+; |cmddecoder|jmp~0         ; |cmddecoder|jmp~0         ; out0             ;
+; |cmddecoder|jmp~1         ; |cmddecoder|jmp~1         ; out0             ;
+; |cmddecoder|jmp~2         ; |cmddecoder|jmp~2         ; out0             ;
+; |cmddecoder|jmp~3         ; |cmddecoder|jmp~3         ; out0             ;
+; |cmddecoder|jmp~4         ; |cmddecoder|jmp~4         ; out0             ;
+; |cmddecoder|jmp~5         ; |cmddecoder|jmp~5         ; out0             ;
+; |cmddecoder|jmp~6         ; |cmddecoder|jmp~6         ; out0             ;
+; |cmddecoder|jz~0          ; |cmddecoder|jz~0          ; out0             ;
+; |cmddecoder|jc~0          ; |cmddecoder|jc~0          ; out0             ;
+; |cmddecoder|jc~1          ; |cmddecoder|jc~1          ; out0             ;
+; |cmddecoder|in1~0         ; |cmddecoder|in1~0         ; out0             ;
+; |cmddecoder|in1~1         ; |cmddecoder|in1~1         ; out0             ;
+; |cmddecoder|out1~0        ; |cmddecoder|out1~0        ; out0             ;
+; |cmddecoder|out1~1        ; |cmddecoder|out1~1        ; out0             ;
+; |cmddecoder|nop~0         ; |cmddecoder|nop~0         ; out0             ;
+; |cmddecoder|nop~1         ; |cmddecoder|nop~1         ; out0             ;
+; |cmddecoder|nop~2         ; |cmddecoder|nop~2         ; out0             ;
+; |cmddecoder|nop~3         ; |cmddecoder|nop~3         ; out0             ;
+; |cmddecoder|nop~4         ; |cmddecoder|nop~4         ; out0             ;
+; |cmddecoder|halt~0        ; |cmddecoder|halt~0        ; out0             ;
+; |cmddecoder|halt~1        ; |cmddecoder|halt~1        ; out0             ;
+; |cmddecoder|halt~2        ; |cmddecoder|halt~2        ; out0             ;
+; |cmddecoder|halt~3        ; |cmddecoder|halt~3        ; out0             ;
+; |cmddecoder|halt~4        ; |cmddecoder|halt~4        ; out0             ;
+; |cmddecoder|cmdar_code[0] ; |cmddecoder|cmdar_code[0] ; out              ;
+; |cmddecoder|cmdar_code[1] ; |cmddecoder|cmdar_code[1] ; out              ;
+; |cmddecoder|cmdar_code[2] ; |cmddecoder|cmdar_code[2] ; out              ;
+; |cmddecoder|cmdar_code[3] ; |cmddecoder|cmdar_code[3] ; out              ;
+; |cmddecoder|cmdar_code[4] ; |cmddecoder|cmdar_code[4] ; out              ;
+; |cmddecoder|cmdar_code[5] ; |cmddecoder|cmdar_code[5] ; out              ;
+; |cmddecoder|cmdar_code[6] ; |cmddecoder|cmdar_code[6] ; out              ;
+; |cmddecoder|cmdar_code[7] ; |cmddecoder|cmdar_code[7] ; out              ;
++---------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------+
+; Missing 1-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |cmddecoder|r1~1   ; |cmddecoder|r1~1   ; out0             ;
+; |cmddecoder|r2~1   ; |cmddecoder|r2~1   ; out0             ;
+; |cmddecoder|mov1~6 ; |cmddecoder|mov1~6 ; out0             ;
+; |cmddecoder|mov2~3 ; |cmddecoder|mov2~3 ; out0             ;
+; |cmddecoder|mov3~3 ; |cmddecoder|mov3~3 ; out0             ;
+; |cmddecoder|add~5  ; |cmddecoder|add~5  ; out0             ;
+; |cmddecoder|sub~5  ; |cmddecoder|sub~5  ; out0             ;
+; |cmddecoder|or1~4  ; |cmddecoder|or1~4  ; out0             ;
+; |cmddecoder|not1~3 ; |cmddecoder|not1~3 ; out0             ;
+; |cmddecoder|rsr~4  ; |cmddecoder|rsr~4  ; out0             ;
+; |cmddecoder|rsl~2  ; |cmddecoder|rsl~2  ; out0             ;
+; |cmddecoder|jmp~7  ; |cmddecoder|jmp~7  ; out0             ;
+; |cmddecoder|jz~1   ; |cmddecoder|jz~1   ; out0             ;
+; |cmddecoder|jc~2   ; |cmddecoder|jc~2   ; out0             ;
+; |cmddecoder|in1~2  ; |cmddecoder|in1~2  ; out0             ;
+; |cmddecoder|out1~2 ; |cmddecoder|out1~2 ; out0             ;
+; |cmddecoder|nop~5  ; |cmddecoder|nop~5  ; out0             ;
+; |cmddecoder|halt~5 ; |cmddecoder|halt~5 ; out0             ;
+; |cmddecoder|enable ; |cmddecoder|enable ; out              ;
+; |cmddecoder|mov1   ; |cmddecoder|mov1   ; pin_out          ;
+; |cmddecoder|mov2   ; |cmddecoder|mov2   ; pin_out          ;
+; |cmddecoder|mov3   ; |cmddecoder|mov3   ; pin_out          ;
+; |cmddecoder|add    ; |cmddecoder|add    ; pin_out          ;
+; |cmddecoder|sub    ; |cmddecoder|sub    ; pin_out          ;
+; |cmddecoder|or1    ; |cmddecoder|or1    ; pin_out          ;
+; |cmddecoder|not1   ; |cmddecoder|not1   ; pin_out          ;
+; |cmddecoder|rsr    ; |cmddecoder|rsr    ; pin_out          ;
+; |cmddecoder|rsl    ; |cmddecoder|rsl    ; pin_out          ;
+; |cmddecoder|jmp    ; |cmddecoder|jmp    ; pin_out          ;
+; |cmddecoder|jz     ; |cmddecoder|jz     ; pin_out          ;
+; |cmddecoder|jc     ; |cmddecoder|jc     ; pin_out          ;
+; |cmddecoder|in1    ; |cmddecoder|in1    ; pin_out          ;
+; |cmddecoder|out1   ; |cmddecoder|out1   ; pin_out          ;
+; |cmddecoder|nop    ; |cmddecoder|nop    ; pin_out          ;
+; |cmddecoder|halt   ; |cmddecoder|halt   ; pin_out          ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------+
+; Missing 0-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |cmddecoder|r1~1   ; |cmddecoder|r1~1   ; out0             ;
+; |cmddecoder|r2~1   ; |cmddecoder|r2~1   ; out0             ;
+; |cmddecoder|mov1~6 ; |cmddecoder|mov1~6 ; out0             ;
+; |cmddecoder|mov2~3 ; |cmddecoder|mov2~3 ; out0             ;
+; |cmddecoder|mov3~3 ; |cmddecoder|mov3~3 ; out0             ;
+; |cmddecoder|add~5  ; |cmddecoder|add~5  ; out0             ;
+; |cmddecoder|sub~5  ; |cmddecoder|sub~5  ; out0             ;
+; |cmddecoder|or1~4  ; |cmddecoder|or1~4  ; out0             ;
+; |cmddecoder|not1~3 ; |cmddecoder|not1~3 ; out0             ;
+; |cmddecoder|rsr~4  ; |cmddecoder|rsr~4  ; out0             ;
+; |cmddecoder|rsl~2  ; |cmddecoder|rsl~2  ; out0             ;
+; |cmddecoder|jmp~7  ; |cmddecoder|jmp~7  ; out0             ;
+; |cmddecoder|jz~1   ; |cmddecoder|jz~1   ; out0             ;
+; |cmddecoder|jc~2   ; |cmddecoder|jc~2   ; out0             ;
+; |cmddecoder|in1~2  ; |cmddecoder|in1~2  ; out0             ;
+; |cmddecoder|out1~2 ; |cmddecoder|out1~2 ; out0             ;
+; |cmddecoder|nop~5  ; |cmddecoder|nop~5  ; out0             ;
+; |cmddecoder|halt~5 ; |cmddecoder|halt~5 ; out0             ;
+; |cmddecoder|enable ; |cmddecoder|enable ; out              ;
+; |cmddecoder|mov1   ; |cmddecoder|mov1   ; pin_out          ;
+; |cmddecoder|mov2   ; |cmddecoder|mov2   ; pin_out          ;
+; |cmddecoder|mov3   ; |cmddecoder|mov3   ; pin_out          ;
+; |cmddecoder|add    ; |cmddecoder|add    ; pin_out          ;
+; |cmddecoder|sub    ; |cmddecoder|sub    ; pin_out          ;
+; |cmddecoder|or1    ; |cmddecoder|or1    ; pin_out          ;
+; |cmddecoder|not1   ; |cmddecoder|not1   ; pin_out          ;
+; |cmddecoder|rsr    ; |cmddecoder|rsr    ; pin_out          ;
+; |cmddecoder|rsl    ; |cmddecoder|rsl    ; pin_out          ;
+; |cmddecoder|jmp    ; |cmddecoder|jmp    ; pin_out          ;
+; |cmddecoder|jz     ; |cmddecoder|jz     ; pin_out          ;
+; |cmddecoder|jc     ; |cmddecoder|jc     ; pin_out          ;
+; |cmddecoder|in1    ; |cmddecoder|in1    ; pin_out          ;
+; |cmddecoder|out1   ; |cmddecoder|out1   ; pin_out          ;
+; |cmddecoder|nop    ; |cmddecoder|nop    ; pin_out          ;
+; |cmddecoder|halt   ; |cmddecoder|halt   ; pin_out          ;
++--------------------+--------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Nov 07 20:07:43 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off cmddecoder -c cmddecoder
+Info: Using vector source file "C:/Users/86150/Desktop/mylearn/vscode-c++/logic and computer design fundamentals/experiment1/cmddecoder/cmddecoder.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      66.35 %
+Info: Number of transitions in simulation is 5388
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Sat Nov 07 20:07:43 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,41 @@
+|mux_8_3_1
+inputs0[0] => outputs~23.DATAB
+inputs0[1] => outputs~22.DATAB
+inputs0[2] => outputs~21.DATAB
+inputs0[3] => outputs~20.DATAB
+inputs0[4] => outputs~19.DATAB
+inputs0[5] => outputs~18.DATAB
+inputs0[6] => outputs~17.DATAB
+inputs0[7] => outputs~16.DATAB
+inputs1[0] => outputs~15.DATAB
+inputs1[1] => outputs~14.DATAB
+inputs1[2] => outputs~13.DATAB
+inputs1[3] => outputs~12.DATAB
+inputs1[4] => outputs~11.DATAB
+inputs1[5] => outputs~10.DATAB
+inputs1[6] => outputs~9.DATAB
+inputs1[7] => outputs~8.DATAB
+inputs2[0] => outputs~7.DATAB
+inputs2[1] => outputs~6.DATAB
+inputs2[2] => outputs~5.DATAB
+inputs2[3] => outputs~4.DATAB
+inputs2[4] => outputs~3.DATAB
+inputs2[5] => outputs~2.DATAB
+inputs2[6] => outputs~1.DATAB
+inputs2[7] => outputs~0.DATAB
+selinputs[0] => Equal0.IN0
+selinputs[0] => Equal1.IN1
+selinputs[0] => Equal2.IN0
+selinputs[1] => Equal0.IN1
+selinputs[1] => Equal1.IN0
+selinputs[1] => Equal2.IN1
+outputs[0] <= outputs~23.DB_MAX_OUTPUT_PORT_TYPE
+outputs[1] <= outputs~22.DB_MAX_OUTPUT_PORT_TYPE
+outputs[2] <= outputs~21.DB_MAX_OUTPUT_PORT_TYPE
+outputs[3] <= outputs~20.DB_MAX_OUTPUT_PORT_TYPE
+outputs[4] <= outputs~19.DB_MAX_OUTPUT_PORT_TYPE
+outputs[5] <= outputs~18.DB_MAX_OUTPUT_PORT_TYPE
+outputs[6] <= outputs~17.DB_MAX_OUTPUT_PORT_TYPE
+outputs[7] <= outputs~16.DB_MAX_OUTPUT_PORT_TYPE
+
+

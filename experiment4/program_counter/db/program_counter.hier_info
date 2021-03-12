@@ -1,0 +1,31 @@
+|program_counter
+ldpc => process_0~1.IN1
+ldpc => process_0~0.IN1
+inpc => process_0~0.IN0
+inpc => process_0~1.IN0
+clk => adress[7].CLK
+clk => adress[6].CLK
+clk => adress[5].CLK
+clk => adress[4].CLK
+clk => adress[3].CLK
+clk => adress[2].CLK
+clk => adress[1].CLK
+clk => adress[0].CLK
+a[0] => adress~7.DATAB
+a[1] => adress~6.DATAB
+a[2] => adress~5.DATAB
+a[3] => adress~4.DATAB
+a[4] => adress~3.DATAB
+a[5] => adress~2.DATAB
+a[6] => adress~1.DATAB
+a[7] => adress~0.DATAB
+c[0] <= adress[0].DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= adress[1].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= adress[2].DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= adress[3].DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= adress[4].DB_MAX_OUTPUT_PORT_TYPE
+c[5] <= adress[5].DB_MAX_OUTPUT_PORT_TYPE
+c[6] <= adress[6].DB_MAX_OUTPUT_PORT_TYPE
+c[7] <= adress[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

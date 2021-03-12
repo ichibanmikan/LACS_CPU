@@ -1,0 +1,255 @@
+Classic Timing Analyzer report for cmddecoder
+Wed Dec 30 20:28:24 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Parallel Compilation
+  5. tpd
+  6. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                          ;
++------------------------------+-------+---------------+-------------+---------------+------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From          ; To   ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+---------------+------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 11.088 ns   ; cmdar_code[1] ; mov1 ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;               ;      ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+---------------+------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP2S15F484C3       ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 6      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------+
+; tpd                                                                ;
++-------+-------------------+-----------------+---------------+------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From          ; To   ;
++-------+-------------------+-----------------+---------------+------+
+; N/A   ; None              ; 11.088 ns       ; cmdar_code[1] ; mov1 ;
+; N/A   ; None              ; 10.978 ns       ; cmdar_code[0] ; mov1 ;
+; N/A   ; None              ; 10.861 ns       ; cmdar_code[5] ; mov1 ;
+; N/A   ; None              ; 10.716 ns       ; cmdar_code[7] ; mov1 ;
+; N/A   ; None              ; 10.643 ns       ; enable        ; mov1 ;
+; N/A   ; None              ; 10.610 ns       ; cmdar_code[3] ; mov1 ;
+; N/A   ; None              ; 10.520 ns       ; cmdar_code[2] ; mov1 ;
+; N/A   ; None              ; 10.176 ns       ; cmdar_code[6] ; mov1 ;
+; N/A   ; None              ; 10.099 ns       ; cmdar_code[6] ; not1 ;
+; N/A   ; None              ; 10.006 ns       ; cmdar_code[7] ; not1 ;
+; N/A   ; None              ; 9.960 ns        ; cmdar_code[5] ; jmp  ;
+; N/A   ; None              ; 9.900 ns        ; cmdar_code[3] ; not1 ;
+; N/A   ; None              ; 9.881 ns        ; enable        ; not1 ;
+; N/A   ; None              ; 9.834 ns        ; cmdar_code[4] ; mov1 ;
+; N/A   ; None              ; 9.831 ns        ; cmdar_code[7] ; jmp  ;
+; N/A   ; None              ; 9.787 ns        ; enable        ; jmp  ;
+; N/A   ; None              ; 9.717 ns        ; cmdar_code[4] ; jmp  ;
+; N/A   ; None              ; 9.710 ns        ; cmdar_code[2] ; jmp  ;
+; N/A   ; None              ; 9.707 ns        ; cmdar_code[5] ; mov3 ;
+; N/A   ; None              ; 9.648 ns        ; cmdar_code[2] ; not1 ;
+; N/A   ; None              ; 9.566 ns        ; cmdar_code[5] ; not1 ;
+; N/A   ; None              ; 9.562 ns        ; cmdar_code[7] ; mov3 ;
+; N/A   ; None              ; 9.558 ns        ; cmdar_code[5] ; rsr  ;
+; N/A   ; None              ; 9.516 ns        ; cmdar_code[5] ; jz   ;
+; N/A   ; None              ; 9.489 ns        ; enable        ; mov3 ;
+; N/A   ; None              ; 9.456 ns        ; cmdar_code[3] ; mov3 ;
+; N/A   ; None              ; 9.450 ns        ; cmdar_code[1] ; jmp  ;
+; N/A   ; None              ; 9.446 ns        ; cmdar_code[3] ; jmp  ;
+; N/A   ; None              ; 9.413 ns        ; cmdar_code[7] ; rsr  ;
+; N/A   ; None              ; 9.387 ns        ; cmdar_code[7] ; jz   ;
+; N/A   ; None              ; 9.366 ns        ; cmdar_code[2] ; mov3 ;
+; N/A   ; None              ; 9.343 ns        ; enable        ; jz   ;
+; N/A   ; None              ; 9.340 ns        ; cmdar_code[0] ; jmp  ;
+; N/A   ; None              ; 9.340 ns        ; enable        ; rsr  ;
+; N/A   ; None              ; 9.332 ns        ; cmdar_code[2] ; in1  ;
+; N/A   ; None              ; 9.307 ns        ; cmdar_code[3] ; rsr  ;
+; N/A   ; None              ; 9.301 ns        ; cmdar_code[1] ; or1  ;
+; N/A   ; None              ; 9.273 ns        ; cmdar_code[4] ; jz   ;
+; N/A   ; None              ; 9.266 ns        ; cmdar_code[2] ; jz   ;
+; N/A   ; None              ; 9.241 ns        ; cmdar_code[3] ; in1  ;
+; N/A   ; None              ; 9.217 ns        ; cmdar_code[2] ; rsr  ;
+; N/A   ; None              ; 9.191 ns        ; cmdar_code[0] ; or1  ;
+; N/A   ; None              ; 9.152 ns        ; cmdar_code[5] ; rsl  ;
+; N/A   ; None              ; 9.136 ns        ; cmdar_code[5] ; jc   ;
+; N/A   ; None              ; 9.076 ns        ; cmdar_code[4] ; not1 ;
+; N/A   ; None              ; 9.074 ns        ; cmdar_code[5] ; or1  ;
+; N/A   ; None              ; 9.025 ns        ; cmdar_code[1] ; mov2 ;
+; N/A   ; None              ; 9.016 ns        ; cmdar_code[1] ; mov3 ;
+; N/A   ; None              ; 9.007 ns        ; cmdar_code[7] ; jc   ;
+; N/A   ; None              ; 9.007 ns        ; cmdar_code[7] ; rsl  ;
+; N/A   ; None              ; 9.002 ns        ; cmdar_code[3] ; jz   ;
+; N/A   ; None              ; 8.998 ns        ; cmdar_code[6] ; jmp  ;
+; N/A   ; None              ; 8.976 ns        ; enable        ; mov2 ;
+; N/A   ; None              ; 8.963 ns        ; enable        ; jc   ;
+; N/A   ; None              ; 8.934 ns        ; enable        ; rsl  ;
+; N/A   ; None              ; 8.929 ns        ; cmdar_code[7] ; or1  ;
+; N/A   ; None              ; 8.926 ns        ; cmdar_code[6] ; rsr  ;
+; N/A   ; None              ; 8.925 ns        ; cmdar_code[0] ; mov2 ;
+; N/A   ; None              ; 8.906 ns        ; cmdar_code[0] ; mov3 ;
+; N/A   ; None              ; 8.901 ns        ; cmdar_code[3] ; rsl  ;
+; N/A   ; None              ; 8.893 ns        ; cmdar_code[4] ; jc   ;
+; N/A   ; None              ; 8.886 ns        ; cmdar_code[2] ; jc   ;
+; N/A   ; None              ; 8.856 ns        ; enable        ; or1  ;
+; N/A   ; None              ; 8.855 ns        ; cmdar_code[5] ; nop  ;
+; N/A   ; None              ; 8.843 ns        ; cmdar_code[5] ; in1  ;
+; N/A   ; None              ; 8.823 ns        ; cmdar_code[3] ; or1  ;
+; N/A   ; None              ; 8.811 ns        ; cmdar_code[6] ; out1 ;
+; N/A   ; None              ; 8.811 ns        ; cmdar_code[2] ; rsl  ;
+; N/A   ; None              ; 8.764 ns        ; cmdar_code[4] ; mov2 ;
+; N/A   ; None              ; 8.761 ns        ; cmdar_code[1] ; halt ;
+; N/A   ; None              ; 8.735 ns        ; cmdar_code[6] ; mov3 ;
+; N/A   ; None              ; 8.733 ns        ; cmdar_code[2] ; or1  ;
+; N/A   ; None              ; 8.728 ns        ; cmdar_code[2] ; mov2 ;
+; N/A   ; None              ; 8.726 ns        ; cmdar_code[7] ; nop  ;
+; N/A   ; None              ; 8.718 ns        ; cmdar_code[7] ; out1 ;
+; N/A   ; None              ; 8.710 ns        ; cmdar_code[6] ; in1  ;
+; N/A   ; None              ; 8.706 ns        ; cmdar_code[1] ; rsr  ;
+; N/A   ; None              ; 8.682 ns        ; enable        ; nop  ;
+; N/A   ; None              ; 8.658 ns        ; enable        ; in1  ;
+; N/A   ; None              ; 8.651 ns        ; cmdar_code[0] ; halt ;
+; N/A   ; None              ; 8.637 ns        ; cmdar_code[3] ; mov2 ;
+; N/A   ; None              ; 8.622 ns        ; cmdar_code[3] ; jc   ;
+; N/A   ; None              ; 8.620 ns        ; cmdar_code[7] ; in1  ;
+; N/A   ; None              ; 8.617 ns        ; cmdar_code[1] ; rsl  ;
+; N/A   ; None              ; 8.612 ns        ; cmdar_code[4] ; nop  ;
+; N/A   ; None              ; 8.612 ns        ; cmdar_code[3] ; out1 ;
+; N/A   ; None              ; 8.605 ns        ; cmdar_code[2] ; nop  ;
+; N/A   ; None              ; 8.596 ns        ; cmdar_code[0] ; rsr  ;
+; N/A   ; None              ; 8.593 ns        ; enable        ; out1 ;
+; N/A   ; None              ; 8.578 ns        ; cmdar_code[4] ; in1  ;
+; N/A   ; None              ; 8.565 ns        ; cmdar_code[6] ; mov2 ;
+; N/A   ; None              ; 8.562 ns        ; cmdar_code[7] ; mov2 ;
+; N/A   ; None              ; 8.544 ns        ; cmdar_code[6] ; jz   ;
+; N/A   ; None              ; 8.507 ns        ; cmdar_code[0] ; rsl  ;
+; N/A   ; None              ; 8.444 ns        ; cmdar_code[5] ; mov2 ;
+; N/A   ; None              ; 8.441 ns        ; cmdar_code[1] ; sub  ;
+; N/A   ; None              ; 8.389 ns        ; cmdar_code[6] ; or1  ;
+; N/A   ; None              ; 8.369 ns        ; cmdar_code[1] ; jz   ;
+; N/A   ; None              ; 8.360 ns        ; cmdar_code[2] ; out1 ;
+; N/A   ; None              ; 8.357 ns        ; cmdar_code[1] ; add  ;
+; N/A   ; None              ; 8.353 ns        ; cmdar_code[5] ; out1 ;
+; N/A   ; None              ; 8.351 ns        ; cmdar_code[6] ; rsl  ;
+; N/A   ; None              ; 8.345 ns        ; cmdar_code[1] ; nop  ;
+; N/A   ; None              ; 8.341 ns        ; cmdar_code[3] ; nop  ;
+; N/A   ; None              ; 8.331 ns        ; cmdar_code[0] ; sub  ;
+; N/A   ; None              ; 8.327 ns        ; cmdar_code[4] ; mov3 ;
+; N/A   ; None              ; 8.308 ns        ; enable        ; add  ;
+; N/A   ; None              ; 8.257 ns        ; cmdar_code[0] ; add  ;
+; N/A   ; None              ; 8.254 ns        ; cmdar_code[6] ; sub  ;
+; N/A   ; None              ; 8.235 ns        ; cmdar_code[0] ; nop  ;
+; N/A   ; None              ; 8.165 ns        ; cmdar_code[6] ; jc   ;
+; N/A   ; None              ; 8.161 ns        ; cmdar_code[7] ; sub  ;
+; N/A   ; None              ; 8.155 ns        ; cmdar_code[2] ; halt ;
+; N/A   ; None              ; 8.105 ns        ; cmdar_code[4] ; rsr  ;
+; N/A   ; None              ; 8.096 ns        ; cmdar_code[4] ; add  ;
+; N/A   ; None              ; 8.077 ns        ; cmdar_code[0] ; jz   ;
+; N/A   ; None              ; 8.070 ns        ; cmdar_code[4] ; rsl  ;
+; N/A   ; None              ; 8.064 ns        ; cmdar_code[3] ; halt ;
+; N/A   ; None              ; 8.060 ns        ; cmdar_code[2] ; add  ;
+; N/A   ; None              ; 8.055 ns        ; cmdar_code[3] ; sub  ;
+; N/A   ; None              ; 8.044 ns        ; cmdar_code[4] ; or1  ;
+; N/A   ; None              ; 8.036 ns        ; enable        ; sub  ;
+; N/A   ; None              ; 7.989 ns        ; cmdar_code[1] ; jc   ;
+; N/A   ; None              ; 7.969 ns        ; cmdar_code[3] ; add  ;
+; N/A   ; None              ; 7.897 ns        ; cmdar_code[6] ; add  ;
+; N/A   ; None              ; 7.894 ns        ; cmdar_code[7] ; add  ;
+; N/A   ; None              ; 7.892 ns        ; cmdar_code[6] ; nop  ;
+; N/A   ; None              ; 7.886 ns        ; enable        ; halt ;
+; N/A   ; None              ; 7.873 ns        ; cmdar_code[4] ; out1 ;
+; N/A   ; None              ; 7.829 ns        ; cmdar_code[6] ; halt ;
+; N/A   ; None              ; 7.807 ns        ; cmdar_code[5] ; halt ;
+; N/A   ; None              ; 7.803 ns        ; cmdar_code[2] ; sub  ;
+; N/A   ; None              ; 7.791 ns        ; cmdar_code[5] ; sub  ;
+; N/A   ; None              ; 7.777 ns        ; cmdar_code[5] ; add  ;
+; N/A   ; None              ; 7.732 ns        ; cmdar_code[0] ; jc   ;
+; N/A   ; None              ; 7.684 ns        ; cmdar_code[7] ; halt ;
+; N/A   ; None              ; 7.567 ns        ; cmdar_code[4] ; halt ;
+; N/A   ; None              ; 7.516 ns        ; cmdar_code[4] ; sub  ;
++-------+-------------------+-----------------+---------------+------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Dec 30 20:28:24 2020
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off cmddecoder -c cmddecoder --timing_analysis_only
+Info: Longest tpd from source pin "cmdar_code[1]" to destination pin "mov1" is 11.088 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.827 ns) = 0.827 ns; Loc. = PIN_V12; Fanout = 5; PIN Node = 'cmdar_code[1]'
+    Info: 2: + IC(3.995 ns) + CELL(0.346 ns) = 5.168 ns; Loc. = LCCOMB_X15_Y4_N2; Fanout = 5; COMB Node = 'R2~2'
+    Info: 3: + IC(0.630 ns) + CELL(0.366 ns) = 6.164 ns; Loc. = LCCOMB_X15_Y2_N22; Fanout = 1; COMB Node = 'mov1~6'
+    Info: 4: + IC(2.982 ns) + CELL(1.942 ns) = 11.088 ns; Loc. = PIN_H16; Fanout = 0; PIN Node = 'mov1'
+    Info: Total cell delay = 3.481 ns ( 31.39 % )
+    Info: Total interconnect delay = 7.607 ns ( 68.61 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 200 megabytes
+    Info: Processing ended: Wed Dec 30 20:28:24 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
